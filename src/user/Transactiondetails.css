@@ -1,0 +1,34 @@
+.withdraw{
+background: url('/images/withdraw1.png');
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.withdraw h6{
+    color: rgb(4 88 148);
+    text-align: left !important;
+    font-size: .8rem;
+
+}
+.withdraw h3{
+    color: rgb(4 88 148);
+    
+}
+a.badge-success:focus {
+    outline: 0;
+    box-shadow: 0 !important;
+}
+.checkLabel{
+    font-family: poppins;
+    font-size: .8rem;
+}
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
+.checkLabel small{
+    font-weight: 600;
+    color: #363636;
+    font-size: .7rem;
+}
