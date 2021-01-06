@@ -1,0 +1,29 @@
+.hero{
+  background: url('/images/hero-bg.png');
+  background-position: center center;
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+   
+}
+.hero h1{
+    font-family: poppins;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #03357d;
+}
+.hero p{
+    font-size: 1rem;
+    font-family: poppins;
+    
+}
+.hero .btn-hero{
+    color: #fff !important;
+    font-family: poppins;
+    font-weight: 600;
+    background: #03357d !important;
+    border-radius: 5px;
+}

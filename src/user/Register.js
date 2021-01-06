@@ -181,7 +181,7 @@ const Register = () =>  {
                     <div className="form-check">
                         <input className="form-check-input" type="checkbox" checked={check} onChange={handleCheck} />
                         <label className="form-check-label checkLabel" htmlFor="gridCheck">
-                      <small> I agree to VestedMoney <span>term &amp; conditions </span></small>
+                      <small> I agree to VestedMoney <span><Link to="/">terms &amp; conditions</Link> </span></small>
                         </label>
                     </div>
                     </div>

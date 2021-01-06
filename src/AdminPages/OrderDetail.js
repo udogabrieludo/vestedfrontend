@@ -108,8 +108,8 @@ const paymentMethod = orders.transaction_id
               <div className="">
                 <div className="container">
                   <div className="row">
-                    <div className=" col-sm-6 col-md-9">
-                      <div className="row card mr-md-5 ">
+                    <div className=" col-md-12">
+                      <div className="row card ">
                         <div className="col-md-12 card-body">
                            <div className="row">
                            <div className="col-md-6">
@@ -127,14 +127,14 @@ const paymentMethod = orders.transaction_id
                                 #{orders.transaction_id}{" "}
                               </span>
                             </h6>
-                            <p className="mb-0">
-                             <strong style={{fontSize:".7rem"}}> Payment Method :</strong>  {""}
+                            <h6 className="mb-0">
+                            Payment Method :  {""}
 
-                             {`${paymentMethod}`.toString().length > 8 ? <strong> Paystack</strong>
-                              : <strong>Flutterwave</strong> }
-                             </p>
-                            <p>
-                             <strong style={{fontSize:".7rem"}}> Investment Status</strong>  {""}
+                             {`${paymentMethod}`.toString().length > 8 ? <> Paystack</>
+                              : <>Flutterwave</> }
+                             </h6>
+                            <h6>
+                             Investment Status  {""}
                              
                               { orders.status === "Processing"
                                   ? <span  className="badge badge-secondaryz p-2">{ orders.status }</span>
@@ -146,7 +146,7 @@ const paymentMethod = orders.transaction_id
                                   )
                                 }
                              
-                            </p>
+                            </h6>
                           </div>
                            </div>
                            <div className="col-md-6">
@@ -388,7 +388,7 @@ const paymentMethod = orders.transaction_id
                         
                       </div>
                     </div>
-                    <div className="col-md-3  ">
+                    {/* <div className="col-md-3  ">
                       <div className="edit-order card">
                       <p className="text-md-right pr-2"><strong style={{fontSize:".7rem"}}> Payment Status</strong></p>
                       { orders.status === "Processing"
@@ -402,7 +402,7 @@ const paymentMethod = orders.transaction_id
                       }
                       </div>
                       
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
