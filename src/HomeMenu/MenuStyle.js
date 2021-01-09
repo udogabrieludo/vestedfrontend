@@ -145,13 +145,13 @@ transition: all .2s ease-in-out;
 export const NavBtnLink = styled(LinkR)`
 
 text-transform:uppercase;
-color: #fff;
+color: #0089ff;
 border-radius: 5px;
 padding: 7px 25px 8px 25px;
 white-space: nowrap;
 transition: 0.3s;
 font-size: 13px;
-border: 2px solid #fff;
+border: 2px solid #0089ff;
 text-transform: uppercase;
 font-weight: 600;
 background: transparent;
@@ -159,8 +159,8 @@ font-family: poppins;
 transition: all .2s ease-in-out;
 
 &:hover{
-    color:#0089ff;
-    border: 2px solid #0089ff;
+    color:#fff;
+    border: 2px solid #fff;
     background: transparent;
     transition: all .2s ease-in-out;
 }

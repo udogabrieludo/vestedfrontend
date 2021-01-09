@@ -7,7 +7,7 @@ const Forgot_password = () =>{
             
         <div className="container register-form">
        {/* <img src="/images/lock.png" className="img-fluid image-size"  />   */}
-        <Link to="/"> <img src="/images/VestedMoney-Logo.png" alt='logo' className="img-fluid image-size"  /></Link>
+        <Link to="/"> <img src="/images/VestedMoney-Logo1.png" alt='logo' className="img-fluid image-size"  /></Link>
           <div className="form registerForm">
           <div className="note">
           {/*<h3>MEMBER LOGIN</h3>*/}

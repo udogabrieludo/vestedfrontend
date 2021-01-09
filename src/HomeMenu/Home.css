@@ -2,10 +2,11 @@
   background: url('/images/hero-bg.png');
   background-position: center center;
   width: 100%;
-  min-height: 600px;
+  min-height: 650px;
   background-size: cover;
   display: flex;
   align-items: center;
+  
 
    
 }

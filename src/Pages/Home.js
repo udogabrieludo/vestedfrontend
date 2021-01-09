@@ -11,10 +11,13 @@ export default function Home() {
          <div className="container">
           <div>
           <h1>
-          A smarter
+          A Smarter
           </h1>
           <h1>
-           way to grow your money
+           way to grow your 
+          </h1>
+          <h1>
+           Money
           </h1>
           <p>Enjoy real benefits and rewards on your Investment</p>
 
@@ -27,6 +30,16 @@ export default function Home() {
           </div>
           </div>
          </div>
+      </div>
+      <div className="container d-flex justify-content-center">
+         
+           <div className="mt-5">
+           <img src="/images/macbook1.png" />
+           </div>
+           <div>
+           
+           </div>
+         
       </div>
      </>
  )

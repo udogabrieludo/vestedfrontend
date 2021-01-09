@@ -10,7 +10,7 @@ const Menu = ({toggle}) => {
        <Nav>
         <NavbarContainer>
                 <NavLogo to="/">
-                  <ImgLogo src="/images/VestedMoney-Logo.png"  alt="logo" />
+                  <ImgLogo src="/images/VestedMoney-Logo1.png"  alt="logo" />
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
                   <FaBars />

@@ -100,7 +100,7 @@ const redirectUser = ()=> {
       <div className="registerwrapper">
           
            <div className="container register-form">
-           <Link to="/"> <img src="/images/VestedMoney-Logo.png" alt='logo' className="img-fluid image-size"  /></Link>
+           <Link to="/"> <img src="/images/VestedMoney-Logo1.png" alt='logo' className="img-fluid image-size"  /></Link>
               
             
          <div className="form registerForm">
