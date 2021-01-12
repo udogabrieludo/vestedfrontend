@@ -104,7 +104,7 @@ const GetAllProducts = () => {
                          <tr style={{fontFamily:"poppins", fontSize:"14px"}}>
                          <th scope="col" className="text-center"><i className="fa fa-picture-o text-center"></i></th>
                          <th scope="col">Name</th>
-                         <th scope="col">Price</th>
+                         <th scope="col">Amount</th>
                          <th scope="col">ROI</th>
                          <th scope="col">ROI(%)</th>
                          <th scope="col">Duration</th>
@@ -161,7 +161,7 @@ const GetAllProducts = () => {
                      <tr  style={{fontFamily:"poppins", fontSize:"14px"}}>
                          <th scope="col" className="text-center"><i className="fa fa-picture-o text-center"></i></th>
                          <th scope="col">Name</th>
-                         <th scope="col">Price</th>
+                         <th scope="col">Amount</th>
                          <th scope="col">ROI</th>
                          <th scope="col">ROI(%)</th>
                          <th scope="col">Duration</th>

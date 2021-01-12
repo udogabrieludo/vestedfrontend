@@ -1,31 +1,47 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
 import * as Icon from 'react-feather'
 import {Nav, NavbarContainer, NavLogo,ImgLogo, MobileIcon, NavMenu, NavItems,NavLinks, NavBtn, NavBtnLink, NavBtnLinkL} from './MenuStyle'
 
 const Menu = ({toggle}) => {
     
+  const[scrollNav, setScrollNav] = useState(false)
+
+  const changeNavBarBgColor = () =>{
+    if(window.scrollY >= 80){
+      setScrollNav(true)
+    }else{
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavBarBgColor)
+  }, [])
+
+
     return (
         <>
-       <Nav>
+       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
                 <NavLogo to="/">
-                  <ImgLogo src="/images/VestedMoney-Logo1.png"  alt="logo" />
+                  <ImgLogo src="/VestedMoney-Logo.png"  alt="logo" />
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
                   <FaBars />
                 </MobileIcon>
                 <NavMenu>
                   <NavItems>
-                      <NavLinks to="/">About</NavLinks>
-                      <NavLinks to="/login">Invest</NavLinks>
+                      <NavLinks to="/">WHO WE ARE</NavLinks>
+                      <NavLinks to="/login">INVEST</NavLinks>
+                      <NavLinks to="/login">EASY LOAN</NavLinks>
                       <NavLinks to="/">FAQs </NavLinks>
                       {/* <NavLinks to="/">Contact Us</NavLinks> */}
                   </NavItems>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLinkL to="/login"><Icon.LogIn size={13}/> Login</NavBtnLinkL>
-                    <NavBtnLink to='/register'><Icon.UserPlus size={13}/> Sign Up</NavBtnLink>
+                    <NavBtnLinkL to="/login"><Icon.LogIn size={13}  style={{strokeWidth:"4"}}/> LOGIN</NavBtnLinkL>
+                    <NavBtnLink to='/register'> SIGN UP</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
            

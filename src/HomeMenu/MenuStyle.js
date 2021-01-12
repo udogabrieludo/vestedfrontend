@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 
 export const Nav = styled.nav`
-background:#02084e;
+background:${({scrollNav})=>(scrollNav ? "#02084e" : "transparent")};
 height:80px;
 display:flex;
+margin-top: -80px;
 justify-content: center;
 align-items : center;
 position: sticky;
@@ -24,6 +25,7 @@ justify-content: space-between;
 align-items: center;
 width:100% ;
 height: 80px;
+
 z-index:1;
 padding:0 24px;
  max-width:1400px; 
@@ -34,7 +36,8 @@ export const NavLogo = styled(LinkR)`
 color:#fff;
 justify-self:flex-start;
 cursor:pointer;
-width:120px;
+width:150px;
+
 display:flex;
 align-items:center;
 
@@ -89,11 +92,11 @@ export const NavLinks =styled(LinkR)`
  align-items: center;
  color:#fff  ;
  font-family:poppins;
- font-size: .8rem;
+ font-size: .9rem;
  text-decoration:none !important;
-font-weight: 500 !important;
+font-weight: 600 !important;
 padding: 0 3px;
-text-transform: uppercase;
+
 transition: all .2s ease-in-out;
 border-bottom:3px solid transparent;
 
@@ -128,11 +131,11 @@ align-items:center;
 
 export const NavBtnLinkL = styled(LinkR)`
 padding: 7px 25px 8px 25px;
-text-transform:uppercase;
-font-size:14px;
+
+font-size:.9rem;
 color:#fff;
 padding:10px 22px;
-font-weight:500;
+ font-weight:600;
 font-family:poppins;
 transition: all .2s ease-in-out;
 
@@ -144,17 +147,18 @@ transition: all .2s ease-in-out;
 `
 export const NavBtnLink = styled(LinkR)`
 
-text-transform:uppercase;
-color: #0089ff;
-border-radius: 5px;
+
+color: #040da0;
+font-weight:600;
+border-radius: 10px;
 padding: 7px 25px 8px 25px;
 white-space: nowrap;
 transition: 0.3s;
-font-size: 13px;
-border: 2px solid #0089ff;
-text-transform: uppercase;
+font-size: .9rem;
+border: 2px solid transparent;
+
 font-weight: 600;
-background: transparent;
+background: #fff;
 font-family: poppins; 
 transition: all .2s ease-in-out;
 
