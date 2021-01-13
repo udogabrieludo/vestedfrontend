@@ -103,7 +103,7 @@ const TransactionDetail = ({match}) => {
           <div className="col-12 ">
             <div className="">
               <div className="">
-                <div className="container">
+                <div className="container-fluid">
                   <div className="row">
                     <div className="col-md-12">
                       <div className="row card mr-md-5 ">
