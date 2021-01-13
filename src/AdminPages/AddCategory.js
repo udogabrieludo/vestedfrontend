@@ -84,7 +84,7 @@ const AddCategory = () => {
 
         
         <section className="addCategory">
-            <div className="container">
+            <div className="container-fluid">
            <div className="row" >
                <div  className="col-md-12 mt-5 pb-2">
                    <h4 className="text-center">Add New Category</h4>

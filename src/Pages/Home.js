@@ -1,10 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavBar from '../HomeMenu/NavBar'
 import {Link} from 'react-router-dom'
 import '../HomeMenu/Home.css'
 import Footer from '../HomeMenu/Footer.js'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 export default function Home() {
+
+    useEffect(() => {
+        AOS.init({
+          duration : 2000
+        });
+      }, []);
 
  const heroSection = ()=>(
      <>
@@ -12,19 +20,22 @@ export default function Home() {
          <div className="container">
           <div className="row">
             <div className="col-md-7">
-            <h1>
+            <h1 data-aos="fade-down"  data-aos-duration="1000" >
           A smarter way to
           </h1>
-          <h1>
+          <h1 data-aos="fade-up"
+     data-aos-duration="1000">
             grow your  Money
           </h1>
         
-          <p>Enjoy real benefits and rewards on your Investment</p>
+          <p data-aos="fade-in"
+     data-aos-duration="2000">Enjoy real benefits and rewards on your Investment</p>
 
           <div className="pt-3 col-md-9 pl-0">
            <div className="row">
              <div className="col-6 pl-3">
-             <Link to="/" className="download-btn pix-btn" >          
+             <Link to="/" className="download-btn pix-btn" data-aos="fade-in"
+     data-aos-duration="2000">          
 					<div>
                     <span className="btn-icon">
                         <i className="fab fa-google-play" />
@@ -37,7 +48,8 @@ export default function Home() {
             </Link>
             </div>
             <div className="col-6">
-             <Link to="/" className="download-btn pix-btn" >          
+             <Link to="/" className="download-btn pix-btn" data-aos="fade-in"
+     data-aos-duration="2000">          
 					
                  <div>
                     <span className="btn-icon">
@@ -71,7 +83,7 @@ export default function Home() {
                 <div className="col-md-6 text-right invest-now">
                    
                     <div>
-                    <h1>Invest now  <br /> for a comfortable tomorrow</h1>
+                    <h1 data-aos="zoom-out" >Invest now  <br /> for a comfortable tomorrow</h1>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -96,8 +108,8 @@ export default function Home() {
                 </div>
                 <div className="col-md-12 text-center pt-4">
                    <div className="row">
-                      <div className="col-md-3">
-                           <div className="box">
+                      <div className="col-md-3" data-aos="fade-up" data-aos-duration="1000">
+                           <div className="box" >
                                <div className="img-box">
                                    <img src="/images/register-icon1.png" className="img-fluid" />
                                </div>
@@ -110,8 +122,8 @@ export default function Home() {
                               </div>
                            </div>
                       </div>
-                      <div className="col-md-3">
-                           <div className="box">
+                      <div className="col-md-3" data-aos="fade-up" data-aos-duration="2000">
+                           <div className="box" >
                                <div className="img-box">
                                    <img src="/images/pick-plan1.png" className="img-fluid" />
                                </div>
@@ -124,8 +136,8 @@ export default function Home() {
                               </div>
                            </div>
                       </div>
-                      <div className="col-md-3">
-                           <div className="box">
+                      <div className="col-md-3" data-aos="fade-up" data-aos-duration="3000">
+                           <div className="box" >
                                <div className="img-box">
                                    <img src="/images/confirmation-icon1.png" className="img-fluid" />
                                </div>
@@ -138,8 +150,8 @@ export default function Home() {
                               </div>
                            </div>
                       </div>
-                      <div className="col-md-3">
-                           <div className="box">
+                      <div className="col-md-3" data-aos="fade-up" data-aos-duration="4000">
+                           <div className="box" >
                                <div className="img-box">
                                    <img src="/images/returns-icon2.png" className="img-fluid" />
                                </div>
@@ -161,10 +173,10 @@ export default function Home() {
           <div className="container">
           <div className="pt-3 col-md-5 pl-0">
            <div className="row">
-           <h1>
+           <h1 data-aos="zoom-out">
             Take your savings
           </h1>
-          <h1>
+          <h1 data-aos="zoom-out">
            to the next level.
           </h1>
           <div className="description">
@@ -221,14 +233,14 @@ export default function Home() {
                 <div className="col-md-6 text-right invest-now">
                    
                     <div>
-                    <h1>Get access to  <br /> over 50% loan. </h1>
+                    <h1 data-aos="zoom-out">Get access to  <br /> over 50% loan. </h1>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                          quis nostrud exercitation ullamco .
                         </p>
                         <div>
-                            <a className="btn py-2 px-5" type="button">APPLY FOR LOAN</a>
+                            <a className="btn py-2 px-5" type="button">APPLY NOW</a>
                         </div>
                     </div> 
                 

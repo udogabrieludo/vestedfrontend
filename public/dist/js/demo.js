@@ -442,4 +442,6 @@
     $('.product-image-thumb.active').removeClass('active')
     $(this).addClass('active')
   })
+
+  
 })(jQuery)

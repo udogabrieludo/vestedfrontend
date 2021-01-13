@@ -118,7 +118,7 @@ const AddProduct = () => {
 
         
         <section className="addCategory">
-            <div className="container">
+            <div className="container-fluid">
             <div className="row pt-2">
             <div className="col-6 ">
               <h6>
