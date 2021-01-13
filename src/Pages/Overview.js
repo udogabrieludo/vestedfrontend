@@ -104,7 +104,7 @@ export default function Overview() {
         </Helmet>
       </HelmetProvider>
      
-      <section className="content">
+      <div className="content">
         <div className="container">
           <div className="row">
             <div className="col-md-12 mt-3" style={{ fontFamily: "poppins" }}>
@@ -189,8 +189,8 @@ export default function Overview() {
           </div>
        
         </div>
-      </section>
-      <section className="content-bg">
+      </div>
+      <div className="content-bg">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -290,7 +290,7 @@ export default function Overview() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 

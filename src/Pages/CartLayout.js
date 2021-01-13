@@ -23,8 +23,8 @@ const CartLayout = ({
 
     const handleChange = (productId)=> event =>{
         setRun(!run);
-        setCount(event.target.value < 1 ? 1 : event.target.value)
-        if(event.target.value >= 1){
+        setCount(event.target.value < 0 ? 0 : event.target.value)
+        if(event.target.value >= 0){
             updateItem(productId, event.target.value)
         }
     }
