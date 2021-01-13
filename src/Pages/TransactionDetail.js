@@ -76,7 +76,7 @@ const TransactionDetail = ({match}) => {
   const orderDetail = () => (
     <section className="addCategory">
       {showLoading()}
-      <div className="container">
+      <div className="container-fluid">
         <div className="row py-3">
           <div className="col-6 ">
             <div>
