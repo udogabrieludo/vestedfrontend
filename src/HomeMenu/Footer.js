@@ -44,10 +44,10 @@ const Footer = () => {
       <div className="col-xs-12 col-sm-6 col-md-4">
         <h5>Contacts</h5>
         <ul className="list-unstyled quick-links">
-        <li><a href=""><i className="fa fa-angle-double-right" />29A Adekunle Banjo Street. Magodo GRA Phase 2, Lagos State.</a></li>
-        <li><a href=""><i className="fa fa-angle-double-right" />+44 (0) 1616414644</a></li>
-        <li><a href=""><i className="fa fa-angle-double-right" />+234 08065684757</a></li>
-          <li><a href=""><i className="fa fa-angle-double-right" />info@vestedmoney.ng</a></li>
+        <li><a href="">29A Adekunle Banjo Street. Magodo GRA Phase 2, Lagos State.</a></li>
+        <li><a href="">+44 (0) 1616414644</a></li>
+        <li><a href="">+234 08065684757</a></li>
+          <li><a href="">info@vestedmoney.ng</a></li>
           
 
         </ul>

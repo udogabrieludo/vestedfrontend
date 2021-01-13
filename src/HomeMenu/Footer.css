@@ -15,6 +15,7 @@ section .section-title {
 .footer-desc{
     color: #fff;
     letter-spacing: 1px;
+    font-size: .8rem;
 }
 #footer h5{
     padding-bottom: 6px;
@@ -52,12 +53,13 @@ section .section-title {
 	padding: 3px 0;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
-	transition: .5s all ease;
+    transition: .5s all ease;
+    font-size: .9rem;
 }
 #footer ul.quick-links li:hover{
 	padding: 3px 0;
 	margin-left:5px;
-	font-weight:700;
+	font-weight:400;
 }
 #footer ul.quick-links li a i{
 	margin-right: 5px;

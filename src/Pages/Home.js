@@ -62,8 +62,9 @@ export default function Home() {
           </div>
          </div>
       </div>
-      <div className="container  main-section ">       
-          <div className="row ">
+      <div className="  main-section ">       
+         <div className="container">
+         <div className="row ">
                 <div className="col-md-6">
                     <img src="/images/invest-2.png" className="img-fluid avatar"  />
                 </div>
@@ -82,7 +83,8 @@ export default function Home() {
                     </div> 
                 
                 </div>
-          </div>     
+          </div> 
+        </div>    
       </div>
       <div className="container">       
           <div className="row how-it-works pb-5">
@@ -210,7 +212,8 @@ export default function Home() {
 
       </div>
 
-      <div className="container  main-section ">       
+      <div className="  loan-section ">       
+          <div className="container">
           <div className="row ">
                 <div className="col-md-6">
                     <img src="/images/loan-vector.png" className="img-fluid "  />
@@ -230,8 +233,10 @@ export default function Home() {
                     </div> 
                 
                 </div>
-          </div>     
+          </div>  
+         </div>   
       </div>
+      
      </>
  )
  

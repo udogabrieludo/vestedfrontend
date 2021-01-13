@@ -39,6 +39,8 @@
     min-height: 600px;
     display: flex;
     align-items: center;
+    background: url('/images/sectionbg.png');
+    background-size: cover;
 }
 .main-section h1{
     font-family: poppins;
@@ -46,7 +48,7 @@
     font-weight: 600 !important;
     color: #020c79;
    
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     line-height: 1;
 }
 
@@ -212,11 +214,11 @@
 
 
 
-.avatar {	
+.avatar {
 	overflow: hidden;
 	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-
+	animation: float 4s ease-in-out infinite;
+	-webkit-animation: float 4s ease-in-out infinite;
 }
   
 
@@ -251,4 +253,44 @@
 }
 .app-image img{
     margin-right: -10rem;
+}
+
+.loan-section{
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background: url('/images/sectionbg1.png');
+    background-size: cover;
+}
+.loan-section h1{
+    font-family: poppins;
+    font-size: 3rem;
+    font-weight: 600 !important;
+    color: #020c79;
+   
+    letter-spacing: 0px;
+    line-height: 1;
+}
+
+.loan-section p{
+    font-size: 1.1rem;
+    font-family: lato;
+   
+    padding-top: 10px;
+    letter-spacing: 1.3px;
+    /* font-family: 'Basis Grotesque Pro',sans-serif; */
+    
+}
+.loan-section .btn{
+    color:#fff;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    background: rgb(4, 78, 163);
+   
 }
