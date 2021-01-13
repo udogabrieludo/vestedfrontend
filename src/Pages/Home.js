@@ -205,7 +205,7 @@ export default function Home() {
           </div>
 
           <div className="app-image avatar">
-              <img src="/images/phone3.png" className="img-fluid" />
+              <img src="/images/phone-new.png" className="img-fluid" />
           </div>
 
       </div>
