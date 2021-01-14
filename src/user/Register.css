@@ -1236,6 +1236,15 @@ a{
       
    
 }
+.payment-status{
+    letter-spacing: 1px;
+}
+.edit-order{
+    font-family: poppins;
+}
+.edit-order b{
+    color: #fff;
+}
 /* End Modal Popup */
 .input-group-text {
 

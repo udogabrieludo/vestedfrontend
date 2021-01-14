@@ -114,6 +114,8 @@ const paymentMethod = orders.transaction_id
                            <div className="row">
                            <div className="col-md-6">
                            <div style={{ fontFamily: "poppins" }}>
+                          
+                             
                             <h6
                               style={{
                                 textTransform: "capitalize",
