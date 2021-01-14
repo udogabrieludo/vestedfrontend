@@ -35,6 +35,7 @@ const Menu = ({toggle}) => {
                       <NavLinks to="/">WHO WE ARE</NavLinks>
                       <NavLinks to="/login">INVEST</NavLinks>
                       <NavLinks to="/login">EASY LOAN</NavLinks>
+                      <NavLinks to="/login">ASSETS FINANCE </NavLinks>
                       <NavLinks to="/">FAQs </NavLinks>
                       {/* <NavLinks to="/">Contact Us</NavLinks> */}
                   </NavItems>

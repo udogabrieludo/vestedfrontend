@@ -48,7 +48,7 @@ const CartLayout = ({
               </div>
               <div className="col-md-3 text-right">
                 <h6 className="text-danger deleteItem">
-                  <i className="fas fa-trash" onClick={
+                  <i className="fa fa-times" onClick={
                     ()=> {
                       removeItem(product._id);
                       setRun(!run);

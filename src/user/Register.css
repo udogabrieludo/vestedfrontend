@@ -139,7 +139,7 @@ h6{
 }
 .registerForm{
  background: #fff;
- padding: 2rem;
+ padding: 2rem 1rem;
  border-radius: .1rem;
  -webkit-border-radius: .1rem;
  -moz-border-radius: .1rem;
@@ -1461,16 +1461,46 @@ margin-bottom: 40px;
     }
  }
 
+ @media screen and (max-width: 480px){
+     .registerwrapper{
+        padding: 2rem .5rem !important;
+     }
+     .register-form{
+        padding: 2rem 1rem !important;
+     }
+
+     .registerwrapper{
+        display: grid;
+        height: 100vh !important;
+        align-items: center;
+        /* background: radial-gradient(circle at 100%, #010b35, #10224e);
+      */
+        /* background: url('/images/p1.png'), #717379;*/
+        background: url(/images/hero-bg.png);
+        background-size:cover ;
+    
+        
+    
+        margin: 0;
+        padding: 0;
+       
+    }
+    
+ }
+
  @media screen and (max-width : 360px) {
     .register-form {
         width: 100%;
-        padding: 2rem;
+        padding: 2rem .5rem !important;
         border-radius: .1em;
         -webkit-border-radius: .1em;
         -moz-border-radius: .1em;
         -ms-border-radius: .1em;
         -o-border-radius: .1em;
 }
+.registerwrapper{
+    padding: 2rem .5rem;
+ }
     .card .imgz {
         width: 260px;
         height: 200px;
