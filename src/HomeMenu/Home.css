@@ -194,6 +194,18 @@
 ::-webkit-scrollbar-thumb {
     background:  rgb(4, 78, 163) !important; 
   }
+
+  ::-moz-scrollbar {
+    width: 10px;
+   
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background:  rgb(4, 78, 163) !important; 
+  }
+  ::-moz-scrollbar-thumb {
+    background:  rgb(4, 78, 163) !important; 
+  }
   /* floating image */
 
   

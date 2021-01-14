@@ -172,10 +172,12 @@ export default function Overview() {
               </div>
             </div>
             <div className="col-lg-3 col-12">
+
+             
               {/* small box */}
               <div className="small-box bg-info">
                 <div className="inner pb-3">
-                  <p> KYC Application</p>
+                  <p className="pb-4"> KYC<br></br> Application</p>
                   
                 </div>
                 <div className="icon">
@@ -237,54 +239,15 @@ export default function Overview() {
             </div>
 
             <div className="col-md-6">
-              <div>
-                <div
-                  className="quickaction alert alert-info"
-                  style={{
-                    borderRadius: ".5rem",
-                    background: "linear-gradient(to right, #056c98 , #07aee1)",
-                    color: " #fff",
-                  }}
-                >
-                  <div className="py-1 px-3 ">
-                    {/*<img src="/images/savings.svg" alt="logo" width="30px"
-                     style={{backgroundColor:"#fff", padding:"5px", borderRadius:"50%"}} />*/}
-                      <i className=" fas fa-piggy-bank text-light"></i>
-
-                    <div className="leadText">Savings</div> <div className="pull-right">
-                     
-                      <div style={{marginTop: "-30px",  fontFamily:"poppins", fontWeight:"600"}}>
-                        <small style={{ fontWeight:"600"}}>Earn Up To</small>
-                        <h1 style={{ fontSize:"3rem", fontWeight:"600", marginTop:" -.5rem"}}>
-                        15%
-                          </h1>
-                         
-                          </div>
-                     
-                      </div>
-                    <p style={{ fontFamily: "poppins", marginBottom:"1px"}}>   
-                       Let your money make profit for you every month. 
-                    </p>
-                    <hr className="my-1"/>
-                    <Link
-                      to="/dashboard/invest"
-                      type="button"
-                      className="btn py-2 px-3 my-0"
-                      style={{
-                        background: "#fff",
-                        fontWeight: "600",
-                        fontSize: ".7rem",
-                        marginLeft:"0",
-                        color:"#000"
-                      }}
-                    >
-                      Save now
-                    </Link>
+               <div className="px-3 pb-4">
+                  <Link
+                      to="/dashboard/invest">
+                        <img src="/images/savings-1.png" alt="saving" className="img-fluid"/> 
+                   </Link>
+                   
                   </div>
-                </div>
-              </div>
               <div>
-                <h6 style={{ fontFamily: "poppins" }}>Top Sales</h6>
+                <h6 style={{ fontFamily: "poppins" }}>Fast Selling</h6>
                 {topSell()}
               </div>
             </div>
@@ -311,15 +274,9 @@ export default function Overview() {
               {products && products[0] && (
                 <div className="row">
                   <div className="col-md-8  ">
-                   {/* <img src="/images/invest1.svg" alt="logo" width="30px"
-                    
-                    style={{
-                   background: "#ffffff",
-                    border: "1px solid rgb(20 177 94)",
-                    borderRadius: "50%",
-                    padding:"5px" 
-                    }}/> */}
-                     <i className="fa fa-area-chart text-success"></i>
+                   <img src="/images/investment-icon.png" alt="logo" width="30px"
+                   />
+                     {/* <i className="fa fa-area-chart text-success"></i> */}
                     <div>
                       <h6>
                         {products[0].name} - {products[0].category.name}
