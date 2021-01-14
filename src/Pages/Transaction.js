@@ -95,9 +95,11 @@ export default function Transaction() {
         </div>
         <div className="row">
           <div className="col-12 ">
-            <div className="card">
-              <div className="card-body">
+            <div >
+              <div >
                 {history && history.length > 0 ? 
+                <div className="card">
+                  <div className="card-body">
                 <table className="table table-bordered table-striped  table-responsive-sm">
                   <thead>
                     <tr style={{ fontFamily: "poppins", fontSize: "14px" }}>
@@ -226,9 +228,11 @@ export default function Transaction() {
                     </tr>
                   </tfoot>
                 </table>
+                </div>
+                </div>
                 :<div className="text-center " style={{fontFamily:"poppins"}}>
-                  <img src="/images/stats.gif" width="250px "className="img-fluid" />
-                  <h3>Start Investing!</h3>
+                  <img src="/images/searching-amico.png" width="250px "className="img-fluid" />
+                  <h3>You haven't Invested yet!</h3>
                   <p>Start investing in a verified opportunities. </p>
                   <Link
                 to="/dashboard/invest"
@@ -241,19 +245,7 @@ export default function Transaction() {
               >
                 <i className="fas fa-plus-circle"></i> Invest Now
               </Link>
-              <Link
-                to="/dashboard/invest"
-                className="btn py-2 px-3 my-0 "
-                style={{
-                  backgroundColor: "transparent",
-                  fontWeight: "600",
-                  fontSize: ".7rem",
-                  border: "1px solid rgb(7, 37, 113)",
-                  color:"rgb(7, 37, 113)"
-                }}  data-toggle="modal" data-target="#myModal"
-              >
-                Learn more
-              </Link>
+             
                   </div>}
               </div>
             </div>
