@@ -79,7 +79,7 @@ const paymentMethod = orders.transaction_id
   const orderDetail = () => (
     <section className="addCategory">
       {showLoading()}
-      <div className="container">
+      <div className="container-fluid">
         <div className="row py-3">
           <div className="col-6 ">
             <div>
@@ -106,17 +106,29 @@ const paymentMethod = orders.transaction_id
           <div className="col-12 ">
             <div className="">
               <div className="">
-                <div className="container">
+                <div className="container-fluid ">
                   <div className="row">
                     <div className=" col-md-12">
-                      <div className="row card ">
-                        <div className="col-md-12 card-body">
-                           <div className="row">
-                           <div className="col-md-6">
+                      <div className="row card mr-md-5">
+                        <div className="col-md-12 card-body pt-0">
+                        <div className="row" style={{background:"linear-gradient(to top, rgb(2, 12, 121), rgb(5 145 203))",
+                               padding:" 1.3rem",
+                           color:"#fff"}}>
+                           <div className="col-md-9">
                            <div style={{ fontFamily: "poppins" }}>
-                          
-                             
-                            <h6
+                           <div className=" ">
+                               <div> <span style={{fontSize:"1.5rem", fontWeight:"600"}}>
+                               {
+                                orders && orders.products &&
+                                orders.products.map((e, i) => <span key={i}>{e.name}</span>)
+                                  }
+                               </span>
+                                  <small className="badge badge-warning ml-2">{
+                                orders && orders.products &&
+                                orders.products.map((e, i) => <span key={i}>{e.brand}</span>)
+                                  }</small></div>
+                               </div>
+                            <p
                               style={{
                                 textTransform: "capitalize",
                                 marginBottom: "0",
@@ -128,79 +140,43 @@ const paymentMethod = orders.transaction_id
                                 {" "}
                                 #{orders.transaction_id}{" "}
                               </span>
-                            </h6>
-                            <h6 className="mb-0">
-                            Payment Method :  {""}
+                            </p>
+                            <p className="mb-0">
+                             Payment Method :  {""}
 
-                             {`${paymentMethod}`.toString().length > 8 ? <> Paystack</>
+                             {`${paymentMethod}`.toString().length > 8 ? <strong> Paystack</strong>
                               : <>Flutterwave</> }
-                             </h6>
-                            <h6>
-                             Investment Status  {""}
+                             </p>
+                            <div>
+                             <p>Investment Status :  {""}
                              
                               { orders.status === "Processing"
-                                  ? <span  className="badge badge-secondaryz p-2">{ orders.status }</span>
+                                  ? <span  className="badge badge-warning p-2 payment-status">Processing</span>
                                   : ( orders.status === "Completed"
-                                    ? <span  className="badge badge-success p-2">{ orders.status }</span>
-                                    : ( <span  className="badge badge-danger p-2">{ orders.status }</span>
+                                    ? <span  className="badge badge-success p-2 payment-status">Verified</span>
+                                    : ( <span  className="badge badge-danger p-2 payment-status" >Cancel</span>
                                       
                                     )
                                   )
                                 }
+                                </p>
                              
-                            </h6>
+                            </div>
+                            
+                             
+                           
                           </div>
                            </div>
-                           <div className="col-md-6">
-                               <div className="text-md-right  edit-order ">
-                               <h4> {
-                                orders && orders.products &&
-                                orders.products.map((e, i) => <span key={i}>{e.name}</span>)
-                                  }</h4>
-                                  <p>{
-                                orders && orders.products &&
-                                orders.products.map((e, i) => <span key={i}>{e.brand}</span>)
-                                  }</p>
-                               </div>
-                           </div>
-                           </div>
-                          <hr   className="mb-0"/>
-                          <div className="row edit-order-bg">
-                            <div className="col-md-4 col-6 ">
-                              <div>
-                                <small style={{ fontFamily: "poppins" }}>
-                                  <strong>ROI</strong>
-                                </small>
-
-                                <h3
-                                  style={{
-                                    marginBottom: "0",
-                                    fontFamily: "Arial",
-                                  }}
-                                >
-                                  <NumberFormat
-                                    value={orders.returns}
-                                    displayType={"text"}
-                                    prefix={"₦"}
-                                    thousandSeparator={true}
-                                    renderText={(value) => (
-                                      <div>
-                                        <span>{value}</span>
-                                      </div>
-                                    )}
-                                  />
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-md-4 col-6">
-                              <div>
-                                <small style={{ fontFamily: "poppins" }}>
-                                <strong>Amount Invested</strong> 
-                                </small>
-                                <h3
+                           <div className="col-md-3">
+                               <div className="  edit-order ">
+                                 <div className="mb-0">Amount invested</div>
+                                 <h1
                                   style={{
                                     color: "#525f7f",
                                     fontFamily: "Arial",
+                                    fontWeight: "700",
+                                     color:" #fff",
+                                    fontSize:" 2.8rem"
                                   }}
                                 >
                                   <NumberFormat
@@ -210,15 +186,17 @@ const paymentMethod = orders.transaction_id
                                     prefix={"₦"}
                                     renderText={(value) => <div>{value}</div>}
                                   />
-                                </h3>
-                              </div>
-                            </div>
-                            <div className="col-md-4 col-12">
-                              <div className="card p-2 mb-0 text-center">
-                                <small style={{ fontFamily: "poppins" }}>
-                                <strong>Expected Returns</strong> 
-                                </small>
-                                <h3
+                                </h1>
+                                <div className="mb-0">Payment status:
+                                <small className="badge badge-warning ml-2">{
+                                orders && orders.products &&
+                                orders.products.map((e, i) => <span key={i}>Inactive</span>)
+                                  }</small>
+                                
+                                </div>
+                                <div className="mb-0">Expected returns: 
+                                  
+                                <span
                                   style={{
                                     color: "#525f7f",
                                     fontFamily: "Arial",
@@ -229,12 +207,36 @@ const paymentMethod = orders.transaction_id
                                     displayType={"text"}
                                     thousandSeparator={true}
                                     prefix={"₦"}
-                                    renderText={(value) => <div>{value}</div>}
+                                    renderText={(value) => <span> {""} <b>{value}</b></span>}
                                   />
-                                </h3>
-                              </div>
-                            </div>
-                          </div>
+                                </span>
+                                  </div>
+                                  <div className="mb-0">ROI: 
+                                  
+                                  <span
+                                    style={{
+                                      color: "#525f7f",
+                                      fontFamily: "Arial",
+                                    }}
+                                  >
+                                  <NumberFormat
+                                    value={orders.returns}
+                                    displayType={"text"}
+                                    prefix={"₦"}
+                                    thousandSeparator={true}
+                                    renderText={(value) => (
+                                     
+                                        <span><b> {value}</b></span>
+                                     
+                                    )}
+                                  />
+                                  </span>
+                                    </div>
+                               </div>
+                           </div>
+                           </div>
+                          
+                       
                           <hr className="mt-0"/>
                           <div className="row">
                           <div className="col-md-12">
@@ -383,9 +385,9 @@ const paymentMethod = orders.transaction_id
                             
                             
                           </div>
-                        
+{/*                         
                           { orders.status === "Completed"
-                            ? <small className="badge badge-secondaryz p-2 pull-right" disabled><strong>Pending Withdrawal</strong></small>:<></>}
+                            ? <small className="badge badge-secondaryz p-2 pull-right" disabled><strong>Pending Withdrawal</strong></small>:<></>} */}
                         </div>
                         
                       </div>

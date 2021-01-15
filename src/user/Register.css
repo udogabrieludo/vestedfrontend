@@ -1245,6 +1245,9 @@ a{
 .edit-order b{
     color: #fff;
 }
+.text-info {
+    color: #2fe0fc!important;
+}
 /* End Modal Popup */
 .input-group-text {
 
@@ -1291,6 +1294,10 @@ a{
         padding: 0rem .4rem;
         font-weight: 700; 
         font-size: .8rem;      
+}
+.card-body{
+    padding: 15px !important;
+    padding-top: 0!important;
 }
 .card-profile-image {
     max-width:  9rem ;

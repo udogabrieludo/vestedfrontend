@@ -239,7 +239,7 @@ export default function Overview() {
             </div>
 
             <div className="col-md-6">
-               <div className="px-3 pb-4">
+               <div className="pb-3">
                   <Link
                       to="/dashboard/invest">
                         <img src="/images/savings-1.png" alt="saving" className="img-fluid"/> 

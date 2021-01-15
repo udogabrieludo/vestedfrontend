@@ -18,8 +18,11 @@ const TransactionDetail = ({match}) => {
   const [orders, setOrders] = useState({});
 
   const [redirect, setRedirect] = useState(false);
+  const [currentDate, setCurrentDate] = useState(new Date())
 
-
+  const dates = new Date()
+  const options = {  year: 'numeric', month: 'long', day: 'numeric' };
+  
   const [myWithdraw, setwithdraw] = useState({
     amount :"",
     bankName : "",
@@ -72,6 +75,53 @@ const TransactionDetail = ({match}) => {
  
 
  const paymentMethod = orders.transaction_id
+
+ const matureDate = ()=>(
+   <>
+     {
+      orders && orders.products &&
+      orders.products.map((e, i) => 
+      <InvestmentCycle product={orders}  key={i} p={e}  />
+      )
+        }
+   </>
+ )
+
+ const mature =  <>
+ {
+  orders && orders.products &&
+  orders.products.map((e, i) => 
+  <InvestmentCycle product={orders}  key={i} p={e}  />
+  )
+    }
+</>
+
+ const startD = <CreatedDate product={orders} />
+ const startDate = () =>(
+  <CreatedDate product={orders} />
+ )
+
+ const currentD = ()=>(
+  <>
+  { dates.toLocaleDateString('en-US', options)}
+  </>
+ )
+
+ const current = <>{ dates.toLocaleDateString('en-US', options)}</>
+
+ const newinvest =()=>{
+   if(currentD() < startDate()){
+     return <small  className="badge badge-warning">Not Active</small>
+   }else if (currentD() >= startDate()){
+     return <small  className="badge badge-success"> Active</small>
+   }else{
+    return <small  className="badge badge-secondary"> Completed</small>
+   }
+ }
+
+
+
+ 
 
   const orderDetail = () => (
     <section className="addCategory">
@@ -146,17 +196,21 @@ const TransactionDetail = ({match}) => {
                               : <>Flutterwave</> }
                              </p>
                             <div>
-                             <p>Investment Status :  {""}
-                             
-                              { orders.status === "Processing"
-                                  ? <span  className="badge badge-warning p-2 payment-status">Processing</span>
-                                  : ( orders.status === "Completed"
-                                    ? <span  className="badge badge-success p-2 payment-status">Verified</span>
-                                    : ( <span  className="badge badge-danger p-2 payment-status" >Cancel</span>
-                                      
-                                    )
-                                  )
-                                }
+                             <p>Investment Status :  {""}        
+
+                                    {
+                                        current < startDate ? <small  className="badge badge-warning">Not 
+                                        Active</small> : <></>
+                                    }
+                                    {
+                                        current >= startDate && current <= mature ? <small  
+                                        className="badge badge-success">Active</small> : <></>
+                                    }
+                                    {
+                                        !(current < startDate) && !(current >= startDate && current <= 
+                                        mature) ? <small  className="badge badge-secondary"> 
+                                        Completed</small> : <></>
+                                    }
                                 </p>
                              
                             </div>
@@ -186,10 +240,15 @@ const TransactionDetail = ({match}) => {
                                   />
                                 </h1>
                                 <div className="mb-0">Payment status:
-                                <small className="badge badge-warning ml-2">{
-                                orders && orders.products &&
-                                orders.products.map((e, i) => <span key={i}>Inactive</span>)
-                                  }</small>
+                                <small className=" ml-2"> { orders.status === "Processing"
+                                  ? <small  className="badge badge-warning">Processing</small>
+                                  : ( orders.status === "Completed"
+                                    ? <small  className="badge badge-success ">Verified</small>
+                                    : ( <small  className="badge badge-danger " >Cancel</small>
+                                      
+                                    )
+                                  )
+                                }</small>
                                 
                                 </div>
                                 <div className="mb-0">Expected returns: 
