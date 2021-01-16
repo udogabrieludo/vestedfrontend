@@ -14,14 +14,18 @@ import '../user/Transactiondetails.css'
 import ProgressBar from '@ramonak/react-progress-bar';
 
 
+
+
+
+
 const TransactionDetail = ({match}) => {
   const [orders, setOrders] = useState({});
 
   const [redirect, setRedirect] = useState(false);
-  const [currentDate, setCurrentDate] = useState(new Date())
+ 
 
   const dates = new Date()
-  const options = {  year: 'numeric', month: 'long', day: 'numeric' };
+  const options = {  year: 'numeric', month: 'short', day: 'numeric' };
   
   const [myWithdraw, setwithdraw] = useState({
     amount :"",
@@ -87,16 +91,8 @@ const TransactionDetail = ({match}) => {
    </>
  )
 
- const mature =  <>
- {
-  orders && orders.products &&
-  orders.products.map((e, i) => 
-  <InvestmentCycle product={orders}  key={i} p={e}  />
-  )
-    }
-</>
 
- const startD = <CreatedDate product={orders} />
+
  const startDate = () =>(
   <CreatedDate product={orders} />
  )
@@ -107,20 +103,23 @@ const TransactionDetail = ({match}) => {
   </>
  )
 
- const current = <>{ dates.toLocaleDateString('en-US', options)}</>
-
- const newinvest =()=>{
-   if(currentD() < startDate()){
-     return <small  className="badge badge-warning">Not Active</small>
-   }else if (currentD() >= startDate()){
-     return <small  className="badge badge-success"> Active</small>
-   }else{
-    return <small  className="badge badge-secondary"> Completed</small>
-   }
- }
+ 
 
 
 
+ const newMatureDate = matureDate()
+ const newStartDate = startDate()
+const newCurrent = currentD();
+
+const newinvest =()=>{
+  if(newCurrent < newStartDate){
+    return <small  className="badge badge-warning">Not Active</small>
+  }else if (newCurrent >= newStartDate && newCurrent <= newMatureDate ){
+    return <small  className="badge badge-success"> Active</small>
+  }else{
+   return <small  className="badge badge-secondary"> Completed</small>
+  }
+}
  
 
   const orderDetail = () => (
@@ -196,21 +195,9 @@ const TransactionDetail = ({match}) => {
                               : <>Flutterwave</> }
                              </p>
                             <div>
-                             <p>Investment Status :  {""}        
-
-                                    {
-                                        current < startDate ? <small  className="badge badge-warning">Not 
-                                        Active</small> : <></>
-                                    }
-                                    {
-                                        current >= startDate && current <= mature ? <small  
-                                        className="badge badge-success">Active</small> : <></>
-                                    }
-                                    {
-                                        !(current < startDate) && !(current >= startDate && current <= 
-                                        mature) ? <small  className="badge badge-secondary"> 
-                                        Completed</small> : <></>
-                                    }
+                             <p>Investment Status :  {""}     
+                                    {newinvest()} 
+                                         
                                 </p>
                              
                             </div>
@@ -251,24 +238,7 @@ const TransactionDetail = ({match}) => {
                                 }</small>
                                 
                                 </div>
-                                <div className="mb-0">Expected returns: 
-                                  
-                                <span
-                                  style={{
-                                    color: "#525f7f",
-                                    fontFamily: "Arial",
-                                  }}
-                                >
-                                  <NumberFormat
-                                    value={orders.amount + orders.returns}
-                                    displayType={"text"}
-                                    thousandSeparator={true}
-                                    prefix={"₦"}
-                                    renderText={(value) => <span> {""} <b>{value}</b></span>}
-                                  />
-                                </span>
-                                  </div>
-                                  <div className="mb-0">ROI: 
+                                <div className="mb-0">ROI: 
                                   
                                   <span
                                     style={{
@@ -289,6 +259,24 @@ const TransactionDetail = ({match}) => {
                                   />
                                   </span>
                                     </div>
+                                <div className="mb-0">Expected returns: 
+                                  
+                                <span
+                                  style={{
+                                    color: "#525f7f",
+                                    fontFamily: "Arial",
+                                  }}
+                                >
+                                  <NumberFormat
+                                    value={orders.amount + orders.returns}
+                                    displayType={"text"}
+                                    thousandSeparator={true}
+                                    prefix={"₦"}
+                                    renderText={(value) => <span> {""} <b>{value}</b></span>}
+                                  />
+                                </span>
+                                  </div>
+                                
                                </div>
                            </div>
                            </div>
