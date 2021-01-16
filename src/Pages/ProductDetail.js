@@ -86,10 +86,11 @@ export const ProductDetail = (props) => {
           fontWeight: "600",
           fontSize: ".7rem",
           cursor:"not-allowed",
-          pointerEvents:"none"
+          pointerEvents:"none",
+          color:"#fff"
         }}
       >
-       Sold Out
+      Close
       </button>
 
     }
