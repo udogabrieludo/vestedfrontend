@@ -22,6 +22,7 @@ import GetAllCategories from './AdminPages/GetAllCategories'
 import GetAllProducts from './AdminPages/GetAllProducts'
 import InvestmentShop from './Pages/InvestmentShop'
 import ProductDetail from './Pages/ProductDetail'
+import Assets from './Pages/Assets'
 import ReviewPlan from './Pages/ReviewPlan'
 import UpdateProduct from './AdminPages/UpdateProduct'
 import ViewProduct from './AdminPages/ViewProduct'
@@ -52,7 +53,8 @@ const Routes =()=>{
             <PrivateRoute   exact path="/dashboard/save" component={Savings} />
             <PrivateRoute   exact path="/dashboard/loan" component={Loan} />
             <PrivateRoute   exact path="/dashboard/payment-successful" component={PaymentSuccessful} />
-            <PrivateRoute   exact path="/dashboard/review" component={ReviewPlan} />  
+            <PrivateRoute   exact path="/dashboard/review" component={ReviewPlan} /> 
+            <PrivateRoute   exact path="/dashboard/assets-finance" component={Assets} />  
             <PrivateRoute   exact path="/dashboard/transaction" component={Transaction} />
             <PrivateRoute exact path="/dashboard/transaction/:orderId" component={TransactionDetail} />
             <PrivateRoute exact path="/dashboard/account/:userId" component={Account} />

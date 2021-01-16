@@ -113,7 +113,7 @@ const loggedOut = () => {
           <NavLink to="/dashboard/admin/orders" className="nav-link">
             <i className="nav-icon  fas fa-shopping-basket" />
             <p>
-            Orders
+           Investment
             </p>
           </NavLink>}
         </li>
@@ -163,6 +163,40 @@ const loggedOut = () => {
             <i className="nav-icon fas fa-coins" />
             <p>
              Loan & Credit
+             
+            </p>
+          </NavLink>}
+
+          </li>
+          <li className="nav-item">
+        {role === 0 ?
+          <NavLink to="/dashboard/assets-finance" className="nav-link">
+            <i className="nav-icon fas fa-coins" />
+            <p>
+            Assets Finance
+             
+            </p>
+          </NavLink>
+          :
+          <NavLink to="/dashboard/admin/loan-request" className="nav-link">
+            <i className="nav-icon fas fa-coins" />
+            <p>
+            Assets Requests
+             
+            </p>
+          </NavLink>}
+
+          </li>
+          <li className="nav-item">
+        {role === 0 ?
+          <>
+            
+          </>
+          :
+          <NavLink to="/dashboard/admin/loan-request" className="nav-link">
+            <i className="nav-icon fas fa-coins" />
+            <p>
+            Withdraw Requests
              
             </p>
           </NavLink>}
