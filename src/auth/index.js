@@ -20,7 +20,7 @@
       }
 
 
-      // Sign up users
+      // Sign in users
     export const signin = user =>{
         return fetch(`${API}/signin`,{ 
             method:'POST',

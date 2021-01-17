@@ -188,7 +188,7 @@ const Account = (props) => {
       <div className="card card-profile shadow">
         <div className="row justify-content-center">
           <div className="col-lg-3 order-lg-2">
-            <div className="card-profile-image pb-4">
+            <div className="card-profile-image pb-5">
                
                 <img src={`${API}/user/photo/${props.match.params.userId}?${new Date().getTime()}`} className="rounded-circle  use-profile" 
                
@@ -211,11 +211,11 @@ const Account = (props) => {
               : <span className="badge badge-btn badge-success"> Admin</span> }
             </h6>
             <div className="profileText text-capitalize">
-               <small>Name: {firstname}</small>
+               <small>Name: {firstname} {""} {lastname}</small>
             </div>
             <div className="profileText">   
             <small>
-             <i className="fa fa-sitemap text-warning" ></i> Joined - {moment(createdAt).format('LL')}       
+             <i className="fa fa-check text-success" ></i> Membership - {moment(createdAt).format('LL')}       
             </small>
             </div>
            

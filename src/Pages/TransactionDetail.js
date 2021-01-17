@@ -423,7 +423,7 @@ const newinvest =()=>{
                             </Link>
                         
                           { orders.status === "Processing"
-                            ? <small  className="badge badge-secondaryz p-2 pull-right" disabled><strong>Pending Withdrawal</strong></small>:<></>}
+                            ? <small  className="badge badge-secondaryz p-2 pull-right" disabled><strong> Withdraw Not Available</strong></small>:<></>}
                           </div>
                         </div>
                         
@@ -492,7 +492,8 @@ const newinvest =()=>{
          {/* Modal Header */}
          <div>
            
-           <button type="button" className="close btn  btn-circle" style={{color:"#000",fontSize:'1.2rem', background:"#fff", padding:"10px", width:"40px", height:"40px"}}  data-dismiss="modal">×</button>
+           <button type="button" className="close btn  
+           btn-circle" style={{color:"#000",fontSize:'1.2rem', background:"#fff", padding:"10px", width:"40px", height:"40px"}}  data-dismiss="modal">×</button>
          </div>
          {/* Modal body */}
          <div className="modal-body">
