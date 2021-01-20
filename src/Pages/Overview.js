@@ -172,19 +172,19 @@ export default function Overview() {
               </div>
             </div>
             <div className="col-lg-3 col-12">
-
-             
               {/* small box */}
               <div className="small-box bg-info">
-                <div className="inner pb-3">
-                  <p className="pb-4"> KYC<br></br> Application</p>
-                  
+                <div className="inner">
+                  <p>Wallet</p>
+                  <h3>
+                    <span style={{ fontSize: "1.3rem" }}>₦</span>0
+                  </h3>
                 </div>
                 <div className="icon">
-                  <i className="fas fa-user" />
+                  <i className="fas fa-coins" />
                 </div>
-                <Link to={`/dashboard/account/${_id}#nav-kycaccount`} className="small-box-footer">
-                  View  <i className="fas fa-arrow-circle-right" />
+                <Link to="/dashboard/wallet" className="small-box-footer">
+                  Wallet History <i className="fas fa-arrow-circle-right" />
                 </Link>
               </div>
             </div>

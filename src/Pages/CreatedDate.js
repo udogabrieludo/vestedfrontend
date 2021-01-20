@@ -12,9 +12,9 @@ const CreatedDate = ({product}) => {
   
 
     return (
-        <div>
+        <>
               {dates.toLocaleDateString('en-US', options)}
-        </div>
+        </>
     )
 }
 

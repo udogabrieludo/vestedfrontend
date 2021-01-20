@@ -24,8 +24,18 @@ const TransactionDetail = ({match}) => {
   const [redirect, setRedirect] = useState(false);
  
 
-  const dates = new Date()
+  const currentDates = new Date()
+  const option = {  year: 'numeric', month: 'short', day: 'numeric' };
+
+  const startDates = new Date(orders.updatedAt)
+
+    
+         
+
   const options = {  year: 'numeric', month: 'short', day: 'numeric' };
+
+  startDates.setMonth(startDates.getMonth() + 1, 1)
+
   
   const [myWithdraw, setwithdraw] = useState({
     amount :"",
@@ -36,7 +46,7 @@ const TransactionDetail = ({match}) => {
 
   })
 
-  const{ amount, bankName, accountName, accountNumber}=myWithdraw
+  const{ amount, bankName, accountName, accountNumber} = myWithdraw
   const [ loading, setLoading]=useState(false)
 
   const { user, token } = isAuthenticated();
@@ -93,31 +103,23 @@ const TransactionDetail = ({match}) => {
 
 
 
- const startDate = () =>(
-  <CreatedDate product={orders} />
- )
-
- const currentD = ()=>(
-  <>
-  { dates.toLocaleDateString('en-US', options)}
-  </>
- )
-
- 
 
 
 
  const newMatureDate = matureDate()
- const newStartDate = startDate()
-const newCurrent = currentD();
+
+ const newEventDate = startDates.getTime()
+ const newStartDate = currentDates.getTime()
+
+
 
 const newinvest =()=>{
-  if(newCurrent < newStartDate){
+  if(newStartDate < newEventDate){
     return <small  className="badge badge-warning">Not Active</small>
-  }else if (newCurrent >= newStartDate && newCurrent <= newMatureDate ){
-    return <small  className="badge badge-success"> Active</small>
+  }else if (newStartDate >= newEventDate  ){
+    return <small  className="badge badge-success"> In Progress</small>
   }else{
-   return <small  className="badge badge-secondary"> Completed</small>
+   return <small  className="badge badge-secondary"> Investment matured</small>
   }
 }
  
@@ -137,7 +139,7 @@ const newinvest =()=>{
                   textTransform: "capitalize",
                 }}
               >
-             Transaction Details
+             Transaction Details 
               </h3>
             </div>
           </div>
@@ -197,6 +199,9 @@ const newinvest =()=>{
                             <div>
                              <p>Investment Status :  {""}     
                                     {newinvest()} 
+                                   
+                                     
+                                  
                                          
                                 </p>
                              
@@ -276,7 +281,10 @@ const newinvest =()=>{
                                   />
                                 </span>
                                   </div>
-                                
+                                 
+                                  
+                               
+                                  
                                </div>
                            </div>
                            </div>
@@ -416,14 +424,27 @@ const newinvest =()=>{
                             
                           </div>
                           <div>
-                          <Link to="" className="badge badge-success p-2 pull-right"
+                          {/* <Link to="" className="badge badge-success p-2 pull-right"
+                                 data-toggle="modal" data-target="#myModal"
+                            >
+                               WITHDRAWAL AVAILABLE
+                            </Link> */}
+
+{/*                         
+                          { currentD != newMatureDate
+                            ? 
+                            <Link to="" className="badge badge-success p-2 pull-right"
                                  data-toggle="modal" data-target="#myModal"
                             >
                                WITHDRAWAL AVAILABLE
                             </Link>
-                        
-                          { orders.status === "Processing"
-                            ? <small  className="badge badge-secondaryz p-2 pull-right" disabled><strong> Withdraw Not Available</strong></small>:<></>}
+                            
+                            :<>
+                            <small  className="badge badge-secondaryz p-2 pull-right" disabled><strong> 
+                              
+                              WITHDRAW NOT AVAILABLE</strong></small>
+                            
+                            </>} */}
                           </div>
                         </div>
                         
@@ -466,10 +487,12 @@ const newinvest =()=>{
   const withdrawalRequest = e =>{
     e.preventDefault();
     const widthdrawData = {
+      orders: orders,
       amount: amount,
       accountName: `${accountName}`,
       accountnumber: accountNumber,
-      bank:`${bankName}`
+      bank:`${bankName}`,
+      transaction_id:`${paymentMethod}`
     }
 
     withdrawRequest(user._id, token, widthdrawData).then((res)=>{
