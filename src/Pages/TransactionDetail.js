@@ -116,10 +116,10 @@ const TransactionDetail = ({match}) => {
 const newinvest =()=>{
   if(newStartDate < newEventDate){
     return <small  className="badge badge-warning">Not Active</small>
-  }else if (newStartDate >= newEventDate  ){
+  }else if (newStartDate >= newEventDate && orders.status === "Completed" ){
     return <small  className="badge badge-success"> In Progress</small>
   }else{
-   return <small  className="badge badge-secondary"> Investment matured</small>
+   return <small  className="badge badge-secondary"> Matured</small>
   }
 }
  
