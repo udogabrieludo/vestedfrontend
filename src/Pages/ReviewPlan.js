@@ -96,7 +96,9 @@ const ReviewPlan = () => {
               to="/dashboard/invest"
               style={{ textDecoration: "none", color: "rgb(4, 129, 183)" }}
             >
-              <i className="fa fa-arrow-left"></i> Back
+             
+                <><i className="fa fa-arrow-left"></i> Back</>
+             
             </Link>
           </h6>
         </div>

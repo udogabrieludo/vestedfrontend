@@ -90,7 +90,7 @@ const paymentMethod = orders.transaction_id
                   textTransform: "capitalize",
                 }}
               >
-               Edit Order 
+                Order Details
               </h3>
             </div>
           </div>
@@ -110,7 +110,7 @@ const paymentMethod = orders.transaction_id
                   <div className="row">
                     <div className=" col-md-12">
                       <div className="row card mr-md-5">
-                        <div className="col-md-12 card-body pt-0">
+                        <div className="col-md-12  pt-0">
                         <div className="row" style={{background:"linear-gradient(to top, rgb(2, 12, 121), rgb(5 145 203))",
                                padding:" 1.3rem",
                            color:"#fff"}}>
@@ -150,15 +150,11 @@ const paymentMethod = orders.transaction_id
                             <div>
                              <p>Investment Status :  {""}
                              
-                              { orders.status === "Processing"
-                                  ? <span  className="badge badge-warning p-2 payment-status">Processing</span>
-                                  : ( orders.status === "Completed"
-                                    ? <span  className="badge badge-success p-2 payment-status">Verified</span>
-                                    : ( <span  className="badge badge-danger p-2 payment-status" >Cancel</span>
-                                      
-                                    )
-                                  )
-                                }
+                            
+                                 <small className="badge badge-warning ml-2">{
+                                orders && orders.products &&
+                                orders.products.map((e, i) => <span key={i}>Inactive</span>)
+                                  }</small>
                                 </p>
                              
                             </div>
@@ -187,11 +183,17 @@ const paymentMethod = orders.transaction_id
                                     renderText={(value) => <div>{value}</div>}
                                   />
                                 </h1>
-                                <div className="mb-0">Payment status:
-                                <small className="badge badge-warning ml-2">{
-                                orders && orders.products &&
-                                orders.products.map((e, i) => <span key={i}>Inactive</span>)
-                                  }</small>
+                                <div className="mb-0">Payment status: {" "}
+
+                                { orders.status === "Processing"
+                                  ? <span  className="badge badge-warning p-2 payment-status">Processing</span>
+                                  : ( orders.status === "Completed"
+                                    ? <span  className="badge badge-success p-2 payment-status">Verified</span>
+                                    : ( <span  className="badge badge-danger p-2 payment-status" >Cancel</span>
+                                      
+                                    )
+                                  )
+                                }
                                 
                                 </div>
                                 <div className="mb-0">Expected returns: 
@@ -241,7 +243,7 @@ const paymentMethod = orders.transaction_id
                           <div className="row">
                           <div className="col-md-12">
                               <h6  className="mb-3"> Track Investment Progress</h6>  
-                             {orders.status==="Completed"?  <ProgressBar completed={35} height={'15px'} bgcolor={'#036abb'}  />:
+                             {orders.status==="Completed"?  <ProgressBar completed={0} height={'15px'} bgcolor={'#036abb'}  />:
                             <ProgressBar completed={0} height={'15px'} bgcolor={'#036abb'} labelColor={'transparent'}  />}
                           </div>
                           </div>

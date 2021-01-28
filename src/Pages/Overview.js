@@ -148,7 +148,7 @@ export default function Overview() {
                 <div className="icon">
                   <i className="fas fa-piggy-bank" />
                 </div>
-                <Link to="" className="small-box-footer">
+                <Link to="/dashboard/save" className="small-box-footer">
                   My Savings <i className="fas fa-arrow-circle-right" />
                 </Link>
               </div>

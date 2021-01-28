@@ -31,6 +31,7 @@ import UserProfile from './AdminPages/UserProfile'
 import OrderDetail from './AdminPages/OrderDetail'
 import PaymentSuccessful from './Pages/PaymentSuccessful'
 import TransactionDetail from './Pages/TransactionDetail'
+import Wallet from './Pages/Wallet'
 
 
 
@@ -48,6 +49,7 @@ const Routes =()=>{
             <PrivateRoute   exact path="/dashboard" component={Overview} />
             <PrivateRoute   exact path="/dashboard/invest" component={InvestmentShop} />
             <PrivateRoute   exact path="/dashboard/overview" component={Overview} />
+            <PrivateRoute   exact path="/dashboard/wallet" component={Wallet} />
             <PrivateRoute   exact path="/dashboard/my-investment" component={Investment} />
             <PrivateRoute   exact path="/dashboard/invest/:productId" component={ProductDetail} />
             <PrivateRoute   exact path="/dashboard/save" component={Savings} />

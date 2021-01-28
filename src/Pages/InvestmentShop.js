@@ -1,4 +1,4 @@
-import React, {useState, useLayoutEffect} from 'react'
+import React, {useState, useLayoutEffect, useEffect} from 'react'
 import Dashboard from './Dashboard'
 import {Link} from  'react-router-dom'
  import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
@@ -9,6 +9,7 @@ import {Link} from  'react-router-dom'
 import ShowProductImage from './ShowProductImage';
 import Search from './Search'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import SearchProducts from './SearchProducts'
 
 
  
@@ -24,12 +25,18 @@ const InvestmentShop = () => {
     });
 
 
+    const [search, setSearch] = useState('')
+    const { categories, loading, error, products, } = values;
+
+
+    const [filterProducts, setFilterProducts] = useState([])
+
 
 
  
 
 
-  const { categories, loading, error, products, } = values;
+
 
   
   const lifeCycle = () =>{
@@ -56,9 +63,21 @@ const InvestmentShop = () => {
    useLayoutEffect(() => {
  
     lifeCycle()
+
    
    }, [])
 
+     
+   useLayoutEffect(()=>{
+    setFilterProducts(products && products.filter((product)=> {
+      
+     return   product.name.toLowerCase().includes(search.toLowerCase()) 
+    
+    }
+   
+        
+     ))
+   }, [products, search])
     
 
    const invest = () =>(
@@ -82,12 +101,12 @@ const InvestmentShop = () => {
                
                   <div className="col-md-8 ">
                  
-                     <Search />
+                     <SearchProducts  setSearch={setSearch} search={search}/>
                        <div className="card">
                          <div className="card-body">  
                          <div className="container">
                             <div className="row">
-                            { products && products.map((product, i)=>(
+                            { filterProducts && filterProducts.map((product, i)=>(
                           
                             <div className=" col-6 col-md-4 mycard " key={i}>
                                 <Link to={`/dashboard/invest/${product._id}`}>
@@ -146,6 +165,7 @@ const InvestmentShop = () => {
               </div>  
       
             </div>
+        
             </HelmetProvider>
 
    )

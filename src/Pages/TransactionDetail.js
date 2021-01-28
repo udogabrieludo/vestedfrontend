@@ -159,7 +159,7 @@ const newinvest =()=>{
                   <div className="row">
                     <div className="col-md-12">
                       <div className="row card mr-md-5 ">
-                        <div className="col-md-12 card-body pt-0">
+                        <div className="col-md-12  ">
                            <div className="row" style={{background:"linear-gradient(to top, rgb(2, 12, 121), rgb(5 145 203))",
                                padding:" 1.3rem",
                            color:"#fff"}}>
@@ -293,7 +293,7 @@ const newinvest =()=>{
                           <div className="row">
                           <div className="col-md-12">
                               <h6  className="mb-3"> Track Investment Progress</h6>  
-                             {orders.status==="Completed"?  <ProgressBar completed={50} height={'15px'} bgcolor={'#036abb'}  />:
+                             {orders.status==="Completed"?  <ProgressBar completed={0} height={'15px'} bgcolor={'#036abb'}  />:
                             <ProgressBar completed={0} height={'15px'} bgcolor={'#036abb'} labelColor={'transparent'}  />}
                           </div>
                           </div>

@@ -516,8 +516,9 @@ button:focus {
     color: #ffffff !important;
 }
 .nav-sidebar .nav-link p {
-  font-family: poppins !important;
-  font-size: 1rem !important
+  /* font-family: poppins !important; */
+  font-size: 1rem !important;
+  font-weight: 400;
 }
 
 .secpaddingTB60 {
@@ -1297,7 +1298,7 @@ a{
 }
 .card-body{
     padding: 15px !important;
-    padding-top: 0!important;
+   
 }
 .card-profile-image {
     max-width:  9rem ;
