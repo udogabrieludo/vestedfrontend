@@ -46,7 +46,10 @@ const InvestmentShop = () => {
         if(data.error){
             setValues({...values, error: data.error, loading:false})
         }else{
-            setValues({...values, products: data, loading:false, formData: new FormData() })
+            setValues({...values, products: data,
+               loading:false,
+               
+               formData: new FormData() })
         }
     })
   }

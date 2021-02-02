@@ -54,12 +54,13 @@ const ReviewPlan = () => {
            <div style={{fontFamily:"poppins"}}>
            <div className="col-md-12  text-center">     
           
-             <h4 style={{fontFamily:"poppins", fontWeight:"600"}} className="mb-0 text-center">Payment Options</h4>
-            <p style={{ fontSize:".8rem", marginBottom:".4rem"}}> Choose any of the options below and make your payment.</p>
+             <h5 style={{fontFamily:"poppins", fontWeight:"600"}} className="mb-0 text-center">Pay with flutterwave</h5>
+            {/* <p style={{ fontSize:".8rem", marginBottom:".4rem"}}> Choose any of the options below and make your payment.</p> */}
+            <p style={{ fontSize:".8rem", marginBottom:".4rem"}}> Click the button below to continue.</p>
              
-             <div className="col-md-12" data-dismiss="modal">
+             {/* <div className="col-md-12" data-dismiss="modal">
               <PaystackPayment products={items}   />   
-              </div>
+              </div> */}
               <div className="col-md-12" data-dismiss="modal">
                <FlutterwavePayment products={items}    />
               </div>   

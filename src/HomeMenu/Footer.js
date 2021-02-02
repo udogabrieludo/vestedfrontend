@@ -14,8 +14,8 @@ const Footer = () => {
       <img src="/images/VestedMoney-Logo1.png" alt="" className="img-fluid"  width="130px"/>
       </div>
         <div className="pt-3 footer-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        eiusmod tempor
+        We provide opportunities for people to expand their finances through our low risk investment services in Agriculture, 
+        Real Estate and Information Technology to maximize returns and contribute to the economic growth.
         </div>
       </div>
       <div className="col-xs-12 col-sm-6 col-md-2">
@@ -67,7 +67,7 @@ const Footer = () => {
     </div>	
     <div className="row">
       <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+        {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p> */}
         <p className="h6">© All right Reversed.<a className="text-footer ml-2" href="" target="_blank">Vestedmoney</a></p>
       </div>
       <hr />

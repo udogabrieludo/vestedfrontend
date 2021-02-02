@@ -1428,6 +1428,14 @@ box-shadow:2px 2px 2px 2px rgba(215,215,215,0.5);
 form{
 border:0 !important;
 }
+
+@media (max-width:992px){
+    .fps-container .fp-loader {
+        top: 50%;
+        left: 45%;
+        position: absolute;
+    }
+}
 @media (max-width:500px){
 .modal-content{
 width:330px;
@@ -1476,6 +1484,7 @@ margin-bottom: 40px;
         font-family: poppins;
         text-align: center;
     }
+    
  }
 
  @media screen and (max-width: 480px){
@@ -1515,12 +1524,17 @@ margin-bottom: 40px;
         -ms-border-radius: .1em;
         -o-border-radius: .1em;
 }
+.fps-container .fp-loader {
+    top: 50%;
+    left: 43%;
+    position: absolute;
+}
 .registerwrapper{
     padding: 2rem .5rem;
  }
     .card .imgz {
-        width: 260px;
-        height: 200px;
+        width: 200px;
+        height: 100px;
         object-fit: cover;
         border-radius: .5rem .5rem 0 0;
         -webkit-border-radius: .5rem .5rem 0 0;
@@ -1529,6 +1543,10 @@ margin-bottom: 40px;
         -o-border-radius: .5rem .5rem 0 0;
     }
 
+    .productdetail h3{
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    }
     .note h3 {
         color: rgb(253, 252, 252);
         text-transform: uppercase;
@@ -1536,5 +1554,21 @@ margin-bottom: 40px;
         font-weight: 800;
         font-family: Montserrat;
         text-align: center;
+    }
+    .mycard{
+        padding:2px !important
+    }
+ }
+
+ @media (max-width:320px){
+    .card .imgz {
+        width: 150px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: .5rem .5rem 0 0;
+        -webkit-border-radius: .5rem .5rem 0 0;
+        -moz-border-radius: .5rem .5rem 0 0;
+        -ms-border-radius: .5rem .5rem 0 0;
+        -o-border-radius: .5rem .5rem 0 0;
     }
  }

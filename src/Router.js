@@ -32,6 +32,7 @@ import OrderDetail from './AdminPages/OrderDetail'
 import PaymentSuccessful from './Pages/PaymentSuccessful'
 import TransactionDetail from './Pages/TransactionDetail'
 import Wallet from './Pages/Wallet'
+import About from './Aboutpage/About'
 
 
 
@@ -43,6 +44,7 @@ const Routes =()=>{
      
         <Switch>
             <Route  exact path="/" component={Home} />
+            <Route  exact path="/who-we-are" component={About} />
             <Route  exact path="/login" component={Login} />
             <Route   exact path="/register" component={Register} />
             <Route   exact path="/password-reset" component={Forgot_password} />

@@ -32,10 +32,10 @@ const Menu = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                   <NavItems>
-                      <NavLinks to="/">WHO WE ARE</NavLinks>
-                      <NavLinks to="/login">INVEST</NavLinks>
+                      <NavLinks to="/who-we-are">WHO WE ARE</NavLinks>
+                      <NavLinks to="/savings">INVEST</NavLinks>
+                      <NavLinks to="/login">SAVINGS</NavLinks>
                       <NavLinks to="/login">EASY LOAN</NavLinks>
-                      <NavLinks to="/login">ASSETS FINANCE </NavLinks>
                       <NavLinks to="/">FAQs </NavLinks>
                       {/* <NavLinks to="/">Contact Us</NavLinks> */}
                   </NavItems>

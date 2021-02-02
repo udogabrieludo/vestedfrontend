@@ -170,6 +170,7 @@
         -moz-transition: 0.5s;
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
+        margin-top: 2rem;
 }
 .how-it-works .box:hover{
     box-shadow:  2px 2px 8px 8px rgb(0 0 0 / 7%);
@@ -305,4 +306,36 @@
     -o-border-radius: 7px;
     background: rgb(4, 78, 163);
    
+}
+
+@media (max-width: 768px){
+  .saving-section{
+    flex-direction: column;
+    text-align: center;
+  }
+  .app-image {
+    position: static;
+    
+}
+.app-image img{
+    margin-right: 0rem;
+    width: 250px;
+}
+
+}
+
+@media (max-width:480px){
+    .download-btn .btn-text em {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .download-btn {
+        padding: 3px 10px;
+    
+    }
+    .how-it-works {
+        margin-bottom: 1rem;
+      }
 }

@@ -207,7 +207,7 @@ export default function Overview() {
                     backgroundColor: " #fff",
                   }}
                 >
-                  <div className="py-1 px-3 ">
+                  <div className="py-1  ">
                 
                      <i className="fas fa-coins text-info"></i>
                     <div className="leadText">Investment</div>
@@ -238,7 +238,7 @@ export default function Overview() {
               </div>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 ">
                <div className="pb-3">
                   <Link
                       to="/dashboard/invest">
@@ -270,7 +270,7 @@ export default function Overview() {
             role="alert"
             style={{ borderRadius: ".5rem", paddingRight: "0" }}
           >
-            <div className="px-3 overviewText">
+            <div className=" overviewText">
               {products && products[0] && (
                 <div className="row">
                   <div className="col-md-8  ">
@@ -340,7 +340,7 @@ export default function Overview() {
             role="alert"
             style={{ borderRadius: ".5rem", paddingRight: "0" ,backgroundColor: " #fff"}}
           >
-            <div className="px-3 overviewText">
+            <div className=" overviewText">
               {productBySale && productBySale[0] && (
                 <div className="row">
                   <div className="col-md-8  ">

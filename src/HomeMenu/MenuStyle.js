@@ -63,7 +63,8 @@ export const ImgLogo = styled.img`
     right:0;
     cursor:pointer;
     font-size:1.5rem;
-    transform: translate(-100%, 60%)
+    transform: translate(-100%, 60%);
+    color:#fff;
   }
  `
 
