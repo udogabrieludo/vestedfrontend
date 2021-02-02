@@ -72,7 +72,7 @@ export default function About() {
       </div>
       <SavingSection />
 
-      <div className="about-main">       
+      <div className="about-main loan-section">       
           <div className="container">
           <div className="row header-title">
           <h1 data-aos="zoom-out">Why VestedMoney?</h1>
