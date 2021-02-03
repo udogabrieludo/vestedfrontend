@@ -74,22 +74,31 @@ export default function About() {
 
       <div className="about-main loan-section">       
           <div className="container">
+
           <div className="row header-title">
-          <h1 data-aos="zoom-out">Why VestedMoney?</h1>
-          <p>We provide opportunities for people to expand their finances through 
-              our low risk investment services in Agriculture, Real Estate and 
-              Information Technology to maximize returns and contribute to the economic growth. We help our clients create a financial roadmap and assist them in achieving their financial 
-              goals. At Vested Money, we guide your steps to financial freedom!</p>
-                <div className="col-md-12  invest-now ">
-               
-                <div className="row how-it-works">
-               
+              <div className="col-md-6">
+                <div data-aos="zoom-out">
+                    <img src="/images/charts.svg" alt="" className="img-fluid"/>
+                </div>
+                
+                </div> 
+                <div className="col-md-6 why-vested">
+                   <div>
+                   <h1 data-aos="zoom-out">Why VestedMoney?</h1>
+                     <p>We provide opportunities for people to expand their finances through 
+                    our low risk investment services in Agriculture, Real Estate and 
+                    Information Technology to maximize returns and contribute to the economic growth. We help our clients create a financial roadmap and assist them in achieving their financial 
+                    goals. At Vested Money, we guide your steps to financial freedom!</p>
+                   </div>
+                </div>       
+                <div className="col-md-12  invest-now ">           
+                <div className="row how-it-works">         
                 <div className="col-md-12 text-center pt-4">
                    <div className="row">
                       <div className="col-md-4" data-aos="fade-up" data-aos-duration="1000">
                            <div className="box" >
                                <div className="img-box">
-                                   <img src="/images/register-icon1.png" className="img-fluid" />
+                                   <img src="/images/value.png " className="img-fluid" alt="" width="100px" />
                                </div>
                               <div>
                               <h5>VISION</h5>
@@ -104,7 +113,7 @@ export default function About() {
                       <div className="col-md-4 " data-aos="fade-up" data-aos-duration="2000">
                            <div className="box" >
                                <div className="img-box">
-                                   <img src="/images/register-icon1.png" className="img-fluid" />
+                                   <img src="/images/mission.png" className="img-fluid" width="100px"/>
                                </div>
                               <div>
                               <h5>Mission</h5>
@@ -117,7 +126,7 @@ export default function About() {
                       <div className="col-md-4" data-aos="fade-up" data-aos-duration="3000">
                            <div className="box" >
                                <div className="img-box">
-                                   <img src="/images/register-icon1.png" className="img-fluid" />
+                                   <img src="/images/vision.png" className="img-fluid" width="100px" />
                                </div>
                               <div>
                               <h5>Our Values</h5>
