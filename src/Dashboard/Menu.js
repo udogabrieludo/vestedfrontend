@@ -59,11 +59,11 @@ const loggedOut = () => {
   
   {/* Brand Logo */}
   { role === 0 ?
-  <Link className="brand-link"  to="/dashboard/overview"> 
+  <Link className="brand-link"  to="/"> 
     <span className="brand-text font-weight-light pl-3"><img src="/images/VestedMoney-Logo.png" alt="logo" width="100px" style={{  margin: "auto"}}/></span>
   </Link>
   :
-  <Link className="brand-link"  to="/dashboard/admin-overview"> 
+  <Link className="brand-link"  to="/"> 
   <span className="brand-text font-weight-light pl-3"><img src="/images/VestedMoney-Logo.png" alt="logo" width="100px" style={{  margin: "auto"}}/></span>
   </Link>
 

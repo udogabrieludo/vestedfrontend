@@ -1,0 +1,15 @@
+.invest-main .box {
+    box-shadow: 2px 2px 8px 8px rgb(0 0 0 / 7%);
+    padding: 2rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    margin-top: 2rem;
+    background: linear-gradient(to right, #020369, #0870b1);
+    color:#fff;
+}
+.invest-main .box h5{
+    color:#fff;
+}

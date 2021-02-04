@@ -1,11 +1,14 @@
 import React,{useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
 import * as Icon from 'react-feather'
+import {isAuthenticated} from '../auth'
 import {Nav, NavbarContainer, NavLogo,ImgLogo, MobileIcon, NavMenu, NavItems,NavLinks, NavBtn, NavBtnLink, NavBtnLinkL} from './MenuStyle'
 
 const Menu = ({toggle}) => {
     
   const[scrollNav, setScrollNav] = useState(false)
+
+  const{user: _id} = isAuthenticated()
 
   const changeNavBarBgColor = () =>{
     if(window.scrollY >= 80){
@@ -33,7 +36,7 @@ const Menu = ({toggle}) => {
                 <NavMenu>
                   <NavItems>
                       <NavLinks to="/who-we-are">WHO WE ARE</NavLinks>
-                      <NavLinks to="/savings">INVEST</NavLinks>
+                      <NavLinks to="/invest">INVEST</NavLinks>
                       <NavLinks to="/login">SAVINGS</NavLinks>
                       <NavLinks to="/login">EASY LOAN</NavLinks>
                       <NavLinks to="/">FAQs </NavLinks>
@@ -41,8 +44,11 @@ const Menu = ({toggle}) => {
                   </NavItems>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLinkL to="/login"><Icon.LogIn size={13}  style={{strokeWidth:"4"}}/> LOGIN</NavBtnLinkL>
+                     {_id ? <> <NavBtnLink to='/dashboard/overview'>DASHBOARD</NavBtnLink></>: <>
+                      <NavBtnLinkL to="/login"><Icon.LogIn size={13}  style={{strokeWidth:"4"}}/> LOGIN</NavBtnLinkL>
                     <NavBtnLink to='/register'> SIGN UP</NavBtnLink>
+                     </>}
+                    
                 </NavBtn>
             </NavbarContainer>
            

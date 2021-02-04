@@ -91,7 +91,7 @@ export default function Home() {
                          quis nostrud exercitation ullamco .
                         </p>
                         <div>
-                            <a className="btn py-2 px-5" type="button">Invest NOW</a>
+                            <Link to="/dashboard" className="btn py-2 px-5" type="button">Invest NOW <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                     </div> 
                 
@@ -188,7 +188,7 @@ export default function Home() {
                          quis nostrud exercitation ullamco .
                         </p>
                         <div>
-                            <a className="btn py-2 px-5" type="button">APPLY NOW</a>
+                            <Link to="/dashboard" className="btn py-2 px-5" type="button">APPLY NOW <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                     </div> 
                 

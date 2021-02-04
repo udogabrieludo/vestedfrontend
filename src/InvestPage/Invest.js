@@ -5,11 +5,11 @@ import '../HomeMenu/Home.css'
 import Footer from '../HomeMenu/Footer.js'
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import './About.css'
-import {aboutUs, whyVested, theCompany} from './Content'
-import SavingSection from '../Pages/SavingSection'
+import './Invest.css'
+import { sector} from  '.././Aboutpage/Content'
 
-export default function About() {
+
+const Invest =()=>{
 
     useEffect(() => {
         AOS.init({
@@ -17,7 +17,7 @@ export default function About() {
         });
       }, []);
 
- const aboutSection = ()=>(
+ const investSection = ()=>(
      <>
       <div className="about-hero">
          <div className="container">
@@ -25,34 +25,39 @@ export default function About() {
             <div className="col-md-6 about-hero-content-wrapper">
                    <div className="about-hero-content">
                        <h1 data-aos="fade-down"  data-aos-duration="1000" >
-                        A vested place
+                        Build and manage
+                        </h1>
+                        <h1 data-aos="zoom-in"
+                            data-aos-duration="1000">
+                           a diverse investment
                         </h1>
                         <h1 data-aos="fade-up"
                             data-aos-duration="1000">
-                            to boost your finances
+                           portfolio with us!
                         </h1>
                    </div>
             </div>
             <div className="col-md-6">
-             <img src="/images/Wallet-rafiki.svg" alt="hero-image" className="img-fluid" />
+             <img src="/images/investing-4.svg" alt="hero-image" className="img-fluid" />
             </div>
           </div>
          </div>
       </div>
      
 
-      <div className="about-main pb-5">       
+      <div className="invest-main pb-5">       
           <div className="container">
+            
           <div className="row ">
                 <div className="col-md-6">
-                    <img src="/images/analytics.svg" className="img-fluid "  />
+                    <img src="/images/finance-4.svg" className="img-fluid "  />
                 </div>
                 <div className="col-md-6  invest-now ">
                    
                     <div>
-                    <h1 data-aos="zoom-out">About Us</h1>
+                    <h1 data-aos="zoom-out">We put your money to work for you</h1>
                         <p>                
-                           {aboutUs}
+                        Invest in any of our projects across different sectors and earn as high as 45% yearly!
                         </p>
                         <div>
                             <Link to="/dashboard" className="btn py-2 px-5" type="button">Invest now <i className="fa fa-long-arrow-right"></i></Link>
@@ -63,29 +68,21 @@ export default function About() {
           </div>  
          </div>   
       </div>
-      <SavingSection />
+     
 
-      <div className="about-main loan-section">       
+      <div className="invest-main loan-section">       
           <div className="container">
 
-          <div className="row header-title">
-              <div className="col-md-6">
-                <div data-aos="zoom-out">
-                    <img src="/images/charts.svg" alt="" className="img-fluid"/>
-                </div>
-                
-                </div> 
-                <div className="col-md-6 why-vested">
-                   <div>
-                   <h1 data-aos="zoom-out">Why VestedMoney?</h1>
-                     <p>{whyVested}</p>
-                   </div>
-                </div>       
+          <div className="row header-title">      
                 <div className="col-md-12  invest-now ">           
-                <div className="row how-it-works">         
-                <div className="col-md-12 text-center pt-4">
-                   <div className="row">
-                      {theCompany && theCompany.map((data, i)=>(
+                <div className="row">         
+                <div className="col-md-12  pt-4">
+                <h1>Investment Sectors</h1>
+                <p>                
+                        Invest in any of our projects across different sectors and earn as high as 45% yearly!
+                        </p>
+                   <div className="row text-center">
+                      {sector && sector.map((data, i)=>(
                           <div className="col-md-4" data-aos="fade-up" data-aos-duration="1000" key={i}>
                           <div className="box" >
                               <div className="img-box">
@@ -124,12 +121,13 @@ export default function About() {
     return (
         <>
         <NavBar />
-        {aboutSection()}
+        {investSection()}
         <Footer />
         </>
 
     )
 }
 
+export default Invest
 
 

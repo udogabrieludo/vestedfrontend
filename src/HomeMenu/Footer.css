@@ -10,12 +10,12 @@ section .section-title {
 }
 #footer {
     background: #0f016e !important;
-    font-family: poppins;
+   font-family: 'Graphik', sans-serif
 }
 .footer-desc{
     color: #fff;
-    letter-spacing: 1px;
-    font-size: .8rem;
+    /* letter-spacing: 1px; */
+    font-size: .9rem;
 }
 #footer h5{
     padding-bottom: 6px;
@@ -69,7 +69,7 @@ section .section-title {
 }
 .text-footer{
    color:  #5cb0ff;
-   font-family: poppins;
+   font-family: 'Graphik', sans-serif
 }
 
 @media (max-width:767px){
