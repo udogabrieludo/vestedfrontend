@@ -103,12 +103,12 @@ export default function About() {
                       ))}
                     
                    </div>
-                   <div className="row pt-5 d-flex justify-content-center">
+                   {/* <div className="row pt-5 d-flex justify-content-center">
                        <div className="">
                             <Link to="/dashboard" className="btn py-2 px-5" type="button">Invest now <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                    </div>
-                
+                 */}
                 </div>
           </div>
                 </div>

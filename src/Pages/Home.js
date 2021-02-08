@@ -81,7 +81,7 @@ export default function Home() {
                 <div className="col-md-6">
                     <img src="/images/invest-2.png" className="img-fluid avatar"  />
                 </div>
-                <div className="col-md-6 text-right invest-now">
+                <div className="col-md-6  invest-now">
                    
                     <div>
                     <h1 data-aos="zoom-out" >Invest now  <br /> for a comfortable tomorrow</h1>
@@ -90,7 +90,7 @@ export default function Home() {
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                          quis nostrud exercitation ullamco .
                         </p>
-                        <div>
+                        <div className="text-right">
                             <Link to="/dashboard" className="btn py-2 px-5" type="button">Invest NOW <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                     </div> 

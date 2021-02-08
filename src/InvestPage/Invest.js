@@ -105,6 +105,18 @@ const Invest =()=>{
                             <Link to="/dashboard" className="btn py-2 px-5" type="button">Invest now <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                    </div>
+         
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                   
+            </ul>
+    </div >
                 
                 </div>
           </div>
