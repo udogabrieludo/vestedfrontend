@@ -83,11 +83,11 @@
 .download-btn {
     
     padding: 10px 10px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 6px;
     font-size: 14px;
     display: inline-block;
-    background: transparent;
+    background: #0d0e7c;
     color: #fff;
     margin-left: 20px;
 }
@@ -331,6 +331,10 @@
         font-weight: 700;
         line-height: 30px;
     }
+    .download-btn .btn-icon i {
+        font-size: 1.5rem;
+        margin-right: .5rem;
+    }
     .download-btn {
         padding: 3px 10px;
     
@@ -348,4 +352,15 @@
           font-size: 30px !important;
           line-height: 1 !important;
       }
+      .hero-title h1{
+          font-size: 30px !important;
+      }
+      .hero {
+        background: url(/images/main-image.png), url(/images/hero-bg.png);
+        background-position: left top !important;
+        min-height: 750px;
+        background-repeat: no-repeat, repeat;
+        display: flex;
+        align-items: center;
+    }
 }

@@ -9,7 +9,7 @@ position:fixed;
 z-index:999;
 width:60%;
 height:100%;
-background: #1d077d;
+background: #130455;
 display:grid;
 align-items: center;
 top:0;

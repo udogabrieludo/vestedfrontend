@@ -21,18 +21,20 @@ export default function Home() {
          <div className="container">
           <div className="row">
             <div className="col-md-7">
-            <h1 data-aos="fade-down"  data-aos-duration="1000" >
-          A smarter way to
-          </h1>
-          <h1 data-aos="fade-up"
-     data-aos-duration="1000">
-            grow your  Money
+              <div className="hero-title">
+                <h1 data-aos="fade-down"  data-aos-duration="1000" >
+                    A smarter way to
+                    </h1>
+                    <h1 data-aos="fade-up"
+                data-aos-duration="1000">
+                        grow your  Money
           </h1>
         
           <p data-aos="fade-in"
      data-aos-duration="2000">Enjoy real benefits and rewards on your Investment</p>
+              </div>
 
-          <div className="pt-3 col-md-9 pl-0">
+          <div className="pt-3 col-md-9 col-12 pl-0 pr-0">
            <div className="row">
              <div className="col-6 pl-3">
              <Link to="/" className="download-btn pix-btn" data-aos="fade-in"
@@ -78,12 +80,12 @@ export default function Home() {
       <div className="  main-section ">       
          <div className="container">
          <div className="row ">
-                <div className="col-md-6">
+                <div className="col-md-6 order-2 order-sm-12">
                     <img src="/images/invest-2.png" className="img-fluid avatar"  />
                 </div>
-                <div className="col-md-6  invest-now">
+                <div className="col-md-6  invest-now order-1 order-sm-12">
                    
-                    <div>
+                    <div className="mt-5">
                     <h1 data-aos="zoom-out" >Invest now  <br /> for a comfortable tomorrow</h1>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
