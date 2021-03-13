@@ -37,8 +37,8 @@ const Invest =()=>{
                         </h1>
                    </div>
             </div>
-            <div className="col-md-6">
-             <img src="/images/investing-4.svg" alt="hero-image" className="img-fluid" />
+            <div className="col-md-5">
+             <img src="/images/1-investing.png" alt="hero-image" className="img-fluid" />
             </div>
           </div>
          </div>
@@ -50,7 +50,7 @@ const Invest =()=>{
             
           <div className="row ">
                 <div className="col-md-6">
-                    <img src="/images/finance-4.svg" className="img-fluid "  />
+                    <img src="/images/finance-4.png" className="img-fluid "  />
                 </div>
                 <div className="col-md-6  invest-now ">
                    

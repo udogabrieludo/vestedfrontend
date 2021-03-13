@@ -7,6 +7,7 @@ import {signout} from '../auth'
 
 
 import {isAuthenticated} from '../auth'
+import IdleTimerContainer from '../IdleTimer/IdleTimerContainer';
 
 
 
@@ -287,9 +288,11 @@ const loggedOut = () => {
       </ul>
     </nav>
     {/* /.sidebar-menu */}
+    <IdleTimerContainer></IdleTimerContainer> 
     
   </div>
   {/* /.sidebar */}
+ 
 </aside>
 
     )

@@ -1511,7 +1511,24 @@ margin-bottom: 40px;
         padding: 0;
        
     }
-    
+    .relatedProductCard{
+        display: flex;
+        justify-content: center;
+    }
+    .span4 .header {
+        font-family: poppins;
+        color: #052048;
+        font-size: 1.6rem;
+        line-height: 1;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .addCategory h3{
+        font-size: 20px;
+    }
+    .edit-order-bg .card{
+        margin-top: 10px;
+    }
  }
 
  @media screen and (max-width : 360px) {
@@ -1542,7 +1559,17 @@ margin-bottom: 40px;
         -ms-border-radius: .5rem .5rem 0 0;
         -o-border-radius: .5rem .5rem 0 0;
     }
-
+   
+    .card{
+       
+        padding: 5px;
+    }
+    .card h6, h5{
+        font-size: 14px;
+    }
+    .card h5{
+        font-size: 17px;
+    }
     .productdetail h3{
     font-size: 1.5rem;
     padding-bottom: 5px;

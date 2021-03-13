@@ -374,15 +374,15 @@ const newinvest =()=>{
                           <hr   className="mb-0"/>
                           <div className="row edit-order-bg ">
                            
-                            <div className="col-md-4 ">
+                            <div className="col-md-4 col-6">
                               <div className=" text-capitalize">
                            
                               <small>
-                                <strong>Investor Name</strong> 
+                                <strong>Investor</strong> 
                                 </small>
                                  <h6>
                               
-                                 <i className="fa fa-user"></i> {
+                                {
                                 orders && orders.user &&
                                 orders.user.firstname} {""} {
                                   orders && orders.user &&
@@ -392,14 +392,14 @@ const newinvest =()=>{
                               </div>
                             </div>
                             
-                            <div className="col-md-4 ">
+                            <div className="col-md-4 col-6">
                               <div className="">
                               <small>
                                 <strong>Phone</strong> 
                                 </small>
                                  <h6>
                               
-                               <i className="fa fa-phone"></i> {
+                             {
                                 orders && orders.user &&
                                 orders.user.phone} 
                                
@@ -408,10 +408,12 @@ const newinvest =()=>{
                               
                             </div>
                             
-                            <div className="col-md-4 ">
+                            <div className="col-md-4 col-6">
                            
-                              <div className=" text-capitalize">
-                              <label >Marketer  </label>
+                              <div>
+                              <small>
+                                <strong>Marketer</strong> 
+                                </small>
                               <h6>
                               {
                                 orders && orders.user &&
