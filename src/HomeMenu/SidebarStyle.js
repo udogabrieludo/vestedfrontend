@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {FaTimes} from 'react-icons/fa'
 import {Link as LinkR} from 'react-router-dom'
 
@@ -7,9 +7,9 @@ export const SidebarContainer = styled.aside`
 
 position:fixed;
 z-index:999;
-width:80%;
+width:60%;
 height:100%;
-background: linear-gradient(90deg,#C70C0C, #5F0404);
+background: #1d077d;
 display:grid;
 align-items: center;
 top:0;
@@ -58,6 +58,7 @@ grid-template-rows: repeat(6,50px);
 text-align:center;
 padding-left:0px !important;
 
+
 `
 export const SidebarLink = styled(LinkR)`
 display:flex;
@@ -80,7 +81,7 @@ cursor:pointer;
 }
 
 @media (max-width: 480px){
-    font-size: .8rem
+    font-size: .94rem
 }
 
 `
@@ -98,17 +99,17 @@ export const SidebarBtnLink = styled(LinkR)`
 padding:0 1rem;
 text-transform:uppercase;
 font-size:14px;
-color:#fff;
+color:#1d077d;
 margin-top:1.5rem;
 padding:10px 22px;
 border-radius:30px;
 font-weight:600;
 font-family:poppins;
 transition: all .2s ease-in-out;
-background:#49A35A;
+background:#fff;
 
 &:hover{
-    color:#49A35A;
+    color:#fff;
     background:#fff;
     transition: all .2s ease-in-out;
 }

@@ -90,7 +90,7 @@ export default function Home() {
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                          quis nostrud exercitation ullamco .
                         </p>
-                        <div className="text-right">
+                        <div className="text-left">
                             <Link to="/dashboard" className="btn py-2 px-5" type="button">Invest NOW <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                     </div> 

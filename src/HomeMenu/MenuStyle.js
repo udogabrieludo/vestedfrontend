@@ -1,5 +1,5 @@
 
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {Link as LinkR} from 'react-router-dom'
 
 export const Nav = styled.nav`
