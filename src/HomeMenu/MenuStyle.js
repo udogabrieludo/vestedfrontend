@@ -18,6 +18,15 @@ width:100%;
     transition: 0.8s all ease;
 }
 
+
+@media (max-width: 768px){
+
+background:${({scrollNav})=>(scrollNav ? "#02084e" : "#02084e")};
+height:80px;
+display:flex;
+margin-top: -80px;
+}
+
 `
 export const NavbarContainer = styled.div`
 display: flex;
