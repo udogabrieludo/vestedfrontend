@@ -88,9 +88,8 @@ export default function Home() {
                     <div className="mt-5">
                     <h1 data-aos="zoom-out" >Invest now  <br /> for a comfortable tomorrow</h1>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                         quis nostrud exercitation ullamco .
+                        At vested money, we enable you attain financial freedom by ensuring that your money is working as much as you do. We have a range of investment opportunities in agriculture, real estate, and technology, so you don’t have to struggle with 
+                        choosing the right investment. There’s always a plan that suits your pocket, we help you find it!
                         </p>
                         <div className="text-left">
                             <Link to="/dashboard" className="btn py-2 px-5" type="button">Invest NOW <i className="fa fa-long-arrow-right"></i></Link>
@@ -106,7 +105,10 @@ export default function Home() {
                 <div className="col-md-12 ">
                   <div className="text-center">
                      <h1>How it works</h1>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                     <p>
+                     Tell us about yourself and we’ll give you recommendations that fits your earnings. 
+                     Proceed to sign up by opening an account. You’re now at the one-stop place to save, invest and access loans easily.
+                     </p>
                   </div>
                 </div>
                 <div className="col-md-12 text-center pt-4">
@@ -119,8 +121,8 @@ export default function Home() {
                               <div>
                               <h5>Sign up</h5>
                                 <div className="text-contents">
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit,
+                                Sign up to get a dashboard automatically 
+                                created for you. It takes less than two minutes to create an account, don’t be lazy
                                 </div>
                               </div>
                            </div>
@@ -133,8 +135,7 @@ export default function Home() {
                               <div>
                               <h5>Invest</h5>
                                 <div className="text-contents">
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit,
+                                Peruse different investment options to select an investment plan of your choice.
                                 </div>
                               </div>
                            </div>
@@ -147,8 +148,7 @@ export default function Home() {
                               <div>
                               <h5>Confirmation</h5>
                                 <div className="text-contents">
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
+                                Your investment order is summarized on your dashboard and confirmed upon payment.
                                 </div>
                               </div>
                            </div>
@@ -161,8 +161,7 @@ export default function Home() {
                               <div>
                               <h5>Returns</h5>
                                 <div className="text-contents">
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, 
+                                Start earning returns on your investments.
                                 </div>
                               </div>
                            </div>
@@ -183,11 +182,10 @@ export default function Home() {
                 <div className="col-md-6 text-right invest-now">
                    
                     <div>
-                    <h1 data-aos="zoom-out">Get access to  <br /> over 50% loan. </h1>
+                    <h1 data-aos="zoom-out">Experience <br /> is Everything </h1>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                         quis nostrud exercitation ullamco .
+                        We believe experience is everything. We guarantee seamless user experience while saving, investing or accessing loans. Our process is simple,
+                         transparent and easy. We provide access to cutting edge features that you seldom see anywhere.
                         </p>
                         <div>
                             <Link to="/dashboard" className="btn py-2 px-5" type="button">APPLY NOW <i className="fa fa-long-arrow-right"></i></Link>

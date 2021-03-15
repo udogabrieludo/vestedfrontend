@@ -9,7 +9,7 @@ import { isAuthenticated } from '../auth';
 
 const Sidebar = ({isOpen, toggle}) => {
 
-  const {user:{_id}} = isAuthenticated()
+  // const {user:{_id}} = isAuthenticated()
 
     return (
         <SidebarContainer   isOpen={isOpen} onClick={toggle}>
@@ -35,18 +35,18 @@ const Sidebar = ({isOpen, toggle}) => {
                      <SidebarLink to="faqs" onClick={toggle}>
                          <span className="pl-3"> FAQS </span>
                      </SidebarLink>
-                    {_id ? null :  <SidebarLink to="/login" onClick={toggle}>
+                    <SidebarLink to="/login" onClick={toggle}>
                       <span className="pl-3"> LOGIN</span>
-                     </SidebarLink>}
+                     </SidebarLink>
                      
                      
                 </SidebarMenu>
                  <SidebarBtn>
-                       {_id ? <SidebarBtnLink to="/dashboard" onClick={toggle}>
+                      <SidebarBtnLink to="/dashboard" onClick={toggle}>
                       Dashboard
                      </SidebarBtnLink>: <SidebarBtnLink to="/signup" onClick={toggle}>
                       SIGN UP
-                     </SidebarBtnLink>}
+                     </SidebarBtnLink>
                </SidebarBtn>
             </SidebarWrapper>
             
