@@ -247,7 +247,7 @@ export default function Overview() {
                    
                   </div>
               <div>
-                <h6 style={{ fontFamily: "poppins" }}>Fast Selling</h6>
+                <h6 style={{ fontFamily: "poppins" }}>Trending Investment</h6>
                 {topSell()}
               </div>
             </div>

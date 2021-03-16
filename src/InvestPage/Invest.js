@@ -7,6 +7,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import './Invest.css'
 import { sector} from  '.././Aboutpage/Content'
+import SavingSection from '../Pages/SavingSection'
 
 
 const Invest =()=>{
@@ -48,14 +49,14 @@ const Invest =()=>{
       <div className="invest-main pb-5">       
           <div className="container">
             
-          <div className="row ">
+          <div className="row py-5">
                 <div className="col-md-6">
-                    <img src="/images/finance-4.png" className="img-fluid "  />
+                    <img src="/images/finance-4.png" className="img-fluid " width="80%" />
                 </div>
                 <div className="col-md-6  invest-now ">
                    
                     <div>
-                    <h1 data-aos="zoom-out">We put your money to work for you</h1>
+                    <h1 data-aos="zoom-out">We put your<br /> money to work for you</h1>
                         <p>                
                         Invest in any of our projects across different sectors and earn as high as 45% yearly!
                         </p>
@@ -68,6 +69,9 @@ const Invest =()=>{
           </div>  
          </div>   
       </div>
+      <div>
+          <SavingSection />
+      </div>
      
 
       <div className="invest-main loan-section">       
@@ -77,16 +81,18 @@ const Invest =()=>{
                 <div className="col-md-12  invest-now ">           
                 <div className="row">         
                 <div className="col-md-12  pt-4">
-                <h1>Investment Sectors</h1>
-                <p>                
+                  <div className="text-center">
+                  <h1>Investment Sectors</h1>
+                         <p>                
                         Invest in any of our projects across different sectors and earn as high as 45% yearly!
                         </p>
+                  </div>
                    <div className="row text-center">
                       {sector && sector.map((data, i)=>(
                           <div className="col-md-4" data-aos="fade-up" data-aos-duration="1000" key={i}>
                           <div className="box" >
                               <div className="img-box">
-                                  <img src={data.img} className="img-fluid" alt="" width="100px" />
+                                  <img src={data.img} className="img-fluid" alt=""  />
                               </div>
                              <div>
                              <h5>{data.title}</h5>

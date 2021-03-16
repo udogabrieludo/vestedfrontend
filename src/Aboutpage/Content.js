@@ -42,20 +42,20 @@ export const theCompany =[
 
 export const sector =[
     {title: "Agriculture",
-     img: "/images/tractor.png",
-     content: `To be a top leading Financial Technology Company 
-     that helps businesses and individuals achieve their set financial goals and attain financial freedom.
+     img: "/images/agriculture.jpg",
+     content: `There is an increasing demand on the international market for our agricultural commodities,
+      there is a huge investment opportunity in agriculture. Invest now and start earning from the next month!.
     `
     },
     {title: "Real Estate",
-     img: "/images/real-estate.png",
-     content: ` To be a top leading Financial Technology Company 
-     that helps businesses and individuals achieve their set financial goals and attain financial freedom.`
+     img: "/images/housing.jpg",
+     content: `Investing in real estate has tangible asset value that increases over time; the more you hold on, 
+     the more money you make. Invest in any of our housing projects now and get the utmost returns!`
     },
     {title: "Technology",
-     img: "/images/tech-1.png",
-     content: ` To be a top leading Financial Technology Company 
-     that helps businesses and individuals achieve their set financial goals and attain financial freedom.`
+     img: "/images/technology.jpg",
+     content: `The ability to achieve strategic business goals can be
+      difficult without extensive use of technology. Technology is the future. Earn high in little time!!`
     }
     
     ]
