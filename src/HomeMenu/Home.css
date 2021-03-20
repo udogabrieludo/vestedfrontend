@@ -1,5 +1,6 @@
 .hero{
   background: url('/images/main-image.png'), url('/images/hero-bg.png');
+  /* background: url(/images/main-image.png), #031749ee; */
   background-position: right bottom, left top;
   width: 80%, 100%;
   min-height: 750px;

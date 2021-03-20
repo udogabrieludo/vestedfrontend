@@ -153,7 +153,8 @@ h6{
     /* background: radial-gradient(circle at 100%, #010b35, #10224e);
   */
     /* background: url('/images/p1.png'), #717379;*/
-    background: url(/images/hero-bg.png);
+    /* background: url(/images/hero-bg.png); */
+   background:  #031749ee;;
 
     
 
