@@ -257,9 +257,9 @@
 }
 .saving-section .description{
     color: #fff;
-    font-family: 'Graphik', sans-serif;
+    /* font-family: 'Graphik', sans-serif; */
     font-size: 1.1rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     padding-bottom: 1.5rem;
 }
 .app-image{
@@ -314,7 +314,7 @@
 @media (max-width: 768px){
   .saving-section{
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
   }
   .app-image {
     position: static;
@@ -323,6 +323,7 @@
 .app-image img{
     margin-right: 0rem;
     width: 250px;
+    padding: 2rem 0 !important;
 }
 
 .avatar {
@@ -335,10 +336,10 @@
 
 @media (max-width:480px){
     .download-btn .btn-text em {
-        font-size: 1rem;
+        font-size: .9rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 30px;
+        line-height: 20px;
     }
     .download-btn .btn-icon i {
         font-size: 1.5rem;

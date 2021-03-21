@@ -203,6 +203,15 @@ button.bg-info:hover{
     -webkit-border-radius: 10rem;
    
 }
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    overflow: hidden !important;
+}
 
 .help a {
     text-decoration: none;
@@ -1430,6 +1439,12 @@ form{
 border:0 !important;
 }
 
+@media (max-width: 1024px){
+    .register-form{
+        width: 70%;
+    }
+}
+
 @media (max-width:992px){
     .fps-container .fp-loader {
         top: 50%;
@@ -1471,10 +1486,7 @@ margin-bottom: 40px;
         width: 100%;
         padding: 2rem;
         border-radius: .1em;
-        -webkit-border-radius: .1em;
-        -moz-border-radius: .1em;
-        -ms-border-radius: .1em;
-        -o-border-radius: .1em;
+        
 }
 
     .note h3 {
@@ -1495,7 +1507,9 @@ margin-bottom: 40px;
      .register-form{
         padding: 2rem 1rem !important;
      }
-
+     .saving-section h1 {
+        font-size: 2rem !important;
+     }
      .registerwrapper{
         display: grid;
         height: 100vh !important;
@@ -1503,7 +1517,7 @@ margin-bottom: 40px;
         /* background: radial-gradient(circle at 100%, #010b35, #10224e);
       */
         /* background: url('/images/p1.png'), #717379;*/
-        background: url(/images/hero-bg.png);
+        /* background: url(/images/hero-bg.png); */
         background-size:cover ;
     
         

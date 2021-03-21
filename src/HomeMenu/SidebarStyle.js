@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
 import {FaTimes} from 'react-icons/fa'
 import {Link as LinkR} from 'react-router-dom'
+import {Link as LinkLogo} from 'react-router-dom'
 
 
 export const SidebarContainer = styled.aside`
@@ -15,7 +16,7 @@ align-items: center;
 top:0;
 left:0;
 display:none;
-transition: .3s ease-in-out;
+transition: .8s ease-in-out;
 
 opacity: ${({isOpen})=>(isOpen? '100%': '0')};
 left: ${({isOpen})=>(isOpen? '0': "-100%")};
@@ -94,6 +95,15 @@ justify-content:center;
 
 `
 
+export const SidebarLogo = styled(LinkLogo)`
+position: absolute;
+top: 4rem;
+
+`
+export const SidebarImg = styled.img`
+ 
+ width : ${(props)=> props.size}
+`
 
 export const SidebarBtnLink = styled(LinkR)`
 padding:0 1rem;
